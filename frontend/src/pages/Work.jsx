@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { ChevronLeft, ChevronRight, ExternalLink } from "lucide-react";
+import { ChevronLeft, ChevronRight, ExternalLink, Code2 } from "lucide-react";
 import { projects, openSource } from "../mock";
 
 const Work = () => {
@@ -10,6 +10,14 @@ const Work = () => {
   const go = (dir) => {
     setIndex((p) => (p + dir + total) % total);
   };
+
+  if (!total) {
+    return (
+      <section className="relative z-10 min-h-screen flex items-center justify-center">
+        <p className="text-foreground/60 text-lg">No projects found.</p>
+      </section>
+    );
+  }
 
   const current = projects[index];
 
