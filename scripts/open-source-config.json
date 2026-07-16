@@ -1,0 +1,50 @@
+{
+  "githubUsername": "SankeerthNara",
+
+  "excludeRepos": [
+    "firstcontributions/first-contributions"
+  ],
+
+  "excludePRs": [
+    "SankeerthNara/CureCart#1"
+  ],
+
+  "groupBy": {
+    "Princeag1310/CureCart": "CureCart",
+    "Devlaner/loomy": "Loomy",
+    "IN3PIRE/db": "db (IN3PIRE)",
+    "kakunin-ai/kakunin-mcp": "kakunin-mcp",
+    "ghshhf/llama.cpp-fork": "llama.cpp-fork",
+    "nbkdoesntknowcoding/mnema": "Mnema",
+    "Termix-SSH/Termix": "Termix",
+    "7-Blocks/Kepler": "Kepler"
+  },
+
+  "tags": {
+    "CureCart": "Docs  Design",
+    "Loomy": "Security  Testing",
+    "db (IN3PIRE)": "Docs",
+    "kakunin-mcp": "Docs  Planning",
+    "llama.cpp-fork": "Docs",
+    "Mnema": "UX  Polish",
+    "Termix": "Frontend  UX",
+    "Kepler": "Frontend  Design"
+  },
+
+  "defaultTag": "Open Source",
+
+  "overrides": {
+    "7-Blocks/Kepler#47": "Built a custom 404 Not Found page matching Kepler's dashboard design system, featuring an animated orbital debris SVG scene and a catch-all route for previously unmatched paths.",
+    "Termix-SSH/Termix#1046": "Added an \"Open File Manager\" option to the terminal tab's right-click context menu, wiring TabBar and AppShell to open a file browser directly from a terminal session.",
+    "Termix-SSH/Termix#1061": "Fixed poor-contrast autocomplete suggestion text in the command autocomplete dropdown so it stays legible across all themes and accent colors.",
+    "nbkdoesntknowcoding/mnema#88": "Replaced the plain \"No sessions found\" text with a styled empty-state card (icon, heading, description, and a \"Clear filters\" CTA) matching the app's empty-state convention.",
+    "nbkdoesntknowcoding/mnema#80": "Added icon-based empty states with clearer, tab-specific copy to the Access Requests inbox for both incoming and outgoing requests.",
+    "nbkdoesntknowcoding/mnema#79": "Added relative timestamps with hover-for-absolute-time display for improved readability.",
+    "ghshhf/llama.cpp-fork#11": "Wrote a beginner-friendly getting-started guide covering installation, downloading models, and running first inference with llama-cli and llama-server.",
+    "Devlaner/loomy#40": "Identified and fixed an IDOR vulnerability where any authenticated user could retrieve another user's email and verification status by guessing their UUID \u2014 gated the endpoint behind workspace membership and added a reduced public response shape.",
+    "IN3PIRE/db#18": "Updated CHANGELOG.md to reflect recent project changes.",
+    "Princeag1310/CureCart#38": "Enhanced the About Us page and rewrote it in a more professional voice.",
+    "Princeag1310/CureCart#36": "Designed and added a professional README banner to improve the repository's presentation.",
+    "kakunin-ai/kakunin-mcp#13": "Created and added a comprehensive ROADMAP.md outlining the project's future direction and development milestones."
+  }
+}
