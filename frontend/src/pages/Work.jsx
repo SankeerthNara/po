@@ -1,11 +1,46 @@
-import React, { useState } from "react";
+import React, { useMemo, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { ChevronLeft, ChevronRight, ExternalLink, Code2 } from "lucide-react";
-import { projects, openSource } from "../mock";
+import { ChevronLeft, ChevronRight, ExternalLink, Code2, ChevronDown, ChevronUp } from "lucide-react";
+import { projects, openSource, openSourceStats } from "../mock";
+
+const OPEN_SOURCE_VISIBLE_LIMIT = 10;
+
+// Truncates the org groups so at most `limit` individual PR entries are
+// shown in total, keeping full groups where possible and slicing the group
+// that straddles the boundary.
+const truncateOpenSource = (orgs, limit) => {
+  let remaining = limit;
+  const result = [];
+  for (const group of orgs) {
+    if (remaining <= 0) break;
+    if (group.points.length <= remaining) {
+      result.push(group);
+      remaining -= group.points.length;
+    } else {
+      result.push({ ...group, points: group.points.slice(0, remaining) });
+      remaining = 0;
+    }
+  }
+  return result;
+};
 
 const Work = () => {
   const [index, setIndex] = useState(0);
+  const [showAllOpenSource, setShowAllOpenSource] = useState(false);
   const total = projects.length;
+
+  const totalOpenSourceEntries = useMemo(
+    () => openSource.reduce((sum, group) => sum + group.points.length, 0),
+    []
+  );
+  const hasMoreOpenSource = totalOpenSourceEntries > OPEN_SOURCE_VISIBLE_LIMIT;
+  const visibleOpenSource = useMemo(
+    () =>
+      showAllOpenSource
+        ? openSource
+        : truncateOpenSource(openSource, OPEN_SOURCE_VISIBLE_LIMIT),
+    [showAllOpenSource]
+  );
 
   const go = (dir) => {
     setIndex((p) => (p + dir + total) % total);
@@ -185,10 +220,21 @@ const Work = () => {
             <span className="text-foreground/40 text-[11px] tracking-[0.3em] uppercase">
               contributions
             </span>
+            {openSourceStats?.totalMergedPRs ? (
+              <a
+                href={openSourceStats.searchUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1.5 text-[#6b3aef] text-[11px] tracking-[0.2em] uppercase hover:text-[#6b3aef]/70 transition-colors duration-300"
+              >
+                <span className="h-1.5 w-1.5 rounded-full bg-[#6b3aef]" />
+                {openSourceStats.totalMergedPRs} merged PRs
+              </a>
+            ) : null}
           </div>
 
           <ul className="divide-y divide-foreground/[0.06] border-y border-foreground/[0.06]">
-            {openSource.map((os, i) => (
+            {visibleOpenSource.map((os, i) => (
               <li
                 key={os.org}
                 className="group grid grid-cols-1 md:grid-cols-[60px_220px_1fr] gap-6 py-8 hover:bg-foreground/[0.015] transition-colors duration-300"
@@ -210,16 +256,45 @@ const Work = () => {
                 <ul className="space-y-3">
                   {os.points.map((p) => (
                     <li
-                      key={p.slice(0, 40)}
-                      className="text-foreground/55 text-[14px] leading-[1.7] group-hover:text-foreground/75 transition-colors duration-300"
+                      key={p.url || p.text.slice(0, 40)}
+                      className="flex items-start justify-between gap-4 text-foreground/55 text-[14px] leading-[1.7] group-hover:text-foreground/75 transition-colors duration-300"
                     >
-                      {p}
+                      <span>{p.text}</span>
+                      {p.url && (
+                        <a
+                          href={p.url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="shrink-0 inline-flex items-center gap-1 text-[11px] tracking-[0.15em] uppercase text-foreground/45 hover:text-[#6b3aef] transition-colors duration-200 mt-0.5"
+                        >
+                          View
+                          <ExternalLink className="h-3 w-3" />
+                        </a>
+                      )}
                     </li>
                   ))}
                 </ul>
               </li>
             ))}
           </ul>
+
+          {hasMoreOpenSource && (
+            <div className="mt-8 flex justify-center">
+              <button
+                onClick={() => setShowAllOpenSource((v) => !v)}
+                className="group inline-flex items-center gap-2 text-foreground/70 hover:text-[#6b3aef] transition-colors duration-300 text-[11px] tracking-[0.3em] uppercase border border-foreground/15 hover:border-[#6b3aef] rounded-full px-6 py-3"
+              >
+                {showAllOpenSource
+                  ? "View less"
+                  : `View more (${totalOpenSourceEntries - OPEN_SOURCE_VISIBLE_LIMIT} more)`}
+                {showAllOpenSource ? (
+                  <ChevronUp className="h-3.5 w-3.5 group-hover:-translate-y-0.5 transition-transform" />
+                ) : (
+                  <ChevronDown className="h-3.5 w-3.5 group-hover:translate-y-0.5 transition-transform" />
+                )}
+              </button>
+            </div>
+          )}
         </div>
       </div>
     </section>

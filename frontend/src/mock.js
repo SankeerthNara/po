@@ -3,7 +3,7 @@
 export const profile = {
   name: "Sankeerth Nara",
   nameShort: "SANKEERTH NARA",
-  headline: ["Software", "Developer", "& Builder."],
+  headline: ["Student,", "Developer", "& Builder."],
   role: "Backend  Full-Stack  AI/CV",
   location: "IIIT Hyderabad",
   year: "25",
@@ -64,53 +64,113 @@ export const projects = [
   }
 ];
 
+// OPEN-SOURCE-STATS:START
+export const openSourceStats = {
+  totalMergedPRs: 14,
+  searchUrl: "https://github.com/search?q=is%3Apr%20is%3Amerged%20author%3ASankeerthNara&type=pullrequests"
+};
+// OPEN-SOURCE-STATS:END
+
+// OPEN-SOURCE:START
 export const openSource = [
   {
-    org: "Loomy",
-    tag: "Security  Testing",
+    org: "Kepler",
+    tag: "Frontend  Design",
     points: [
-      "Identified and fixed an IDOR vulnerability (#25) where any authenticated user could retrieve another user's email and verification status by guessing their UUID — gated the endpoint behind workspace membership and added a reduced public response shape.",
-      "Added a Postgres-backed regression test suite (transactional per-test fixtures, DB and auth dependency overrides) and wired a Postgres service into GitHub Actions CI, since none existed for the module before."
+      {
+        text: "Built a custom 404 Not Found page matching Kepler's dashboard design system, featuring an animated orbital debris SVG scene and a catch-all route for previously unmatched paths.",
+        url: "https://github.com/7-Blocks/Kepler/pull/47"
+      }
+    ]
+  },
+  {
+    org: "Termix",
+    tag: "Frontend  UX",
+    points: [
+      {
+        text: "Fixed poor-contrast autocomplete suggestion text in the command autocomplete dropdown so it stays legible across all themes and accent colors.",
+        url: "https://github.com/Termix-SSH/Termix/pull/1061"
+      },
+      {
+        text: "Added an \"Open File Manager\" option to the terminal tab's right-click context menu, wiring TabBar and AppShell to open a file browser directly from a terminal session.",
+        url: "https://github.com/Termix-SSH/Termix/pull/1046"
+      }
     ]
   },
   {
     org: "Mnema",
     tag: "UX  Polish",
     points: [
-      "Added relative timestamps with hover-for-absolute-time display for improved readability.",
-      "Improved empty states with icons across the UI for a more polished, informative experience."
+      {
+        text: "Replaced the plain \"No sessions found\" text with a styled empty-state card (icon, heading, description, and a \"Clear filters\" CTA) matching the app's empty-state convention.",
+        url: "https://github.com/nbkdoesntknowcoding/mnema/pull/88"
+      },
+      {
+        text: "Added icon-based empty states with clearer, tab-specific copy to the Access Requests inbox for both incoming and outgoing requests.",
+        url: "https://github.com/nbkdoesntknowcoding/mnema/pull/80"
+      },
+      {
+        text: "Added relative timestamps with hover-for-absolute-time display for improved readability.",
+        url: "https://github.com/nbkdoesntknowcoding/mnema/pull/79"
+      }
     ]
   },
   {
-    org: "CircuitVerse",
-    tag: "i18n  Accessibility",
+    org: "llama.cpp-fork",
+    tag: "Docs",
     points: [
-      "Fixed and improved the Hindi language localisation, making the platform more accessible for Hindi-speaking users."
+      {
+        text: "Wrote a beginner-friendly getting-started guide covering installation, downloading models, and running first inference with llama-cli and llama-server.",
+        url: "https://github.com/ghshhf/llama.cpp-fork/pull/11"
+      }
     ]
   },
   {
-    org: "kakunin-mcp",
-    tag: "Docs  Planning",
+    org: "Loomy",
+    tag: "Security  Testing",
     points: [
-      "Created and added a comprehensive ROADMAP.md outlining the project's future direction and development milestones."
-    ]
-  },
-  {
-    org: "CureCart",
-    tag: "Docs  Design",
-    points: [
-      "Enhanced the About Us page and rewrote it in a more professional voice.",
-      "Designed and added a professional README banner to improve the repository's presentation."
+      {
+        text: "Identified and fixed an IDOR vulnerability where any authenticated user could retrieve another user's email and verification status by guessing their UUID — gated the endpoint behind workspace membership and added a reduced public response shape.",
+        url: "https://github.com/Devlaner/loomy/pull/40"
+      }
     ]
   },
   {
     org: "db (IN3PIRE)",
     tag: "Docs",
     points: [
-      "Updated CHANGELOG.md to reflect recent project changes."
+      {
+        text: "Updated CHANGELOG.md to reflect recent project changes.",
+        url: "https://github.com/IN3PIRE/db/pull/18"
+      }
+    ]
+  },
+  {
+    org: "CureCart",
+    tag: "Docs  Design",
+    points: [
+      {
+        text: "Enhanced the About Us page and rewrote it in a more professional voice.",
+        url: "https://github.com/Princeag1310/CureCart/pull/38"
+      },
+      {
+        text: "Designed and added a professional README banner to improve the repository's presentation.",
+        url: "https://github.com/Princeag1310/CureCart/pull/36"
+      }
+    ]
+  },
+  {
+    org: "kakunin-mcp",
+    tag: "Docs  Planning",
+    points: [
+      {
+        text: "Created and added a comprehensive ROADMAP.md outlining the project's future direction and development milestones.",
+        url: "https://github.com/kakunin-ai/kakunin-mcp/pull/13"
+      }
     ]
   }
 ];
+// OPEN-SOURCE:END
 
 export const skills = {
   Languages: ["C", "C++", "Python", "JavaScript", "Git-Bash", "HTML", "CSS", "SQL"],
