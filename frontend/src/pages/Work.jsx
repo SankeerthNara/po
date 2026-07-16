@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { ChevronLeft, ChevronRight, ExternalLink, Code2 } from "lucide-react";
+import { ChevronLeft, ChevronRight, ExternalLink } from "lucide-react";
 import { projects, openSource } from "../mock";
 
 const Work = () => {
@@ -14,15 +14,15 @@ const Work = () => {
   const current = projects[index];
 
   return (
-    <section className="relative z-10 min-h-screen w-full pl-[220px] pr-24 md:pl-[260px] md:pr-32 pt-32 pb-24">
+    <section className="relative z-10 min-h-screen w-full px-6 pt-28 pb-40 md:pl-[220px] md:pr-24 md:pt-32 md:pb-24 lg:pl-[260px] lg:pr-32">
       <div className="max-w-[1100px]">
         {/* Section heading */}
-        <div className="flex items-baseline gap-6 mb-14">
+        <div className="flex items-baseline gap-4 md:gap-6 mb-10 md:mb-14 flex-wrap">
           <motion.h2
             initial={{ opacity: 0, y: 18 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
-            className="text-foreground font-light text-[64px] md:text-[92px] tracking-[-0.02em] leading-none"
+            className="text-foreground font-light text-[44px] sm:text-[60px] md:text-[92px] tracking-[-0.02em] leading-none"
             style={{ fontFamily: "'Instrument Sans', 'Inter', system-ui, sans-serif" }}
           >
             Work
@@ -98,7 +98,7 @@ const Work = () => {
                       </span>
                     </div>
                     <h3
-                      className="text-foreground text-[34px] md:text-[42px] font-light leading-[1.05] tracking-[-0.01em]"
+                      className="text-foreground text-[26px] sm:text-[30px] md:text-[42px] font-light leading-[1.05] tracking-[-0.01em]"
                       style={{ fontFamily: "'Instrument Sans', 'Inter', sans-serif" }}
                     >
                       {current.title}
@@ -140,7 +140,7 @@ const Work = () => {
           </AnimatePresence>
 
           {/* Prev/Next controls */}
-          <div className="mt-8 flex items-center justify-between">
+          <div className="mt-8 flex items-center justify-between flex-wrap gap-4">
             <div className="text-foreground/60 text-[13px]">
               <span className="text-foreground text-[15px]">{current.title}</span>
               <span className="text-foreground/35 mx-3">/</span>
@@ -166,10 +166,10 @@ const Work = () => {
         </div>
 
         {/* Open source */}
-        <div className="mt-32">
-          <div className="flex items-baseline gap-6 mb-10">
+        <div className="mt-24 md:mt-32">
+          <div className="flex items-baseline gap-4 md:gap-6 mb-8 md:mb-10 flex-wrap">
             <h3
-              className="text-foreground font-light text-[36px] md:text-[46px] tracking-[-0.01em] leading-none"
+              className="text-foreground font-light text-[28px] sm:text-[36px] md:text-[46px] tracking-[-0.01em] leading-none"
               style={{ fontFamily: "'Instrument Sans', 'Inter', sans-serif" }}
             >
               Open Source

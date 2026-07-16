@@ -13,7 +13,7 @@ const fadeUp = {
 
 const About = () => {
   return (
-    <section className="relative z-10 min-h-screen w-full pl-[220px] pr-24 md:pl-[260px] md:pr-32 pt-40 pb-24">
+    <section className="relative z-10 min-h-screen w-full px-6 pt-28 pb-40 md:pl-[220px] md:pr-24 md:pt-40 md:pb-24 lg:pl-[260px] lg:pr-32">
       <div className="max-w-[900px]">
         {/* Headline */}
         <div className="space-y-[-2px] leading-[1.05]">
@@ -24,13 +24,13 @@ const About = () => {
               variants={fadeUp}
               initial="hidden"
               animate="show"
-              className="text-foreground font-light tracking-[-0.02em] text-[68px] md:text-[104px]"
+              className="text-foreground font-light tracking-[-0.02em] text-[42px] sm:text-[56px] md:text-[104px]"
               style={{ fontFamily: "'Instrument Sans', 'Inter', system-ui, sans-serif" }}
             >
               {line}
               {i === profile.headline.length - 1 && (
                 <motion.span
-                  className="inline-block ml-2 w-[6px] h-[64px] md:h-[92px] align-middle bg-[#6b3aef]"
+                  className="inline-block ml-2 w-[4px] md:w-[6px] h-[38px] sm:h-[50px] md:h-[92px] align-middle bg-[#6b3aef]"
                   animate={{ opacity: [1, 0.15, 1] }}
                   transition={{ duration: 1.2, repeat: Infinity }}
                 />

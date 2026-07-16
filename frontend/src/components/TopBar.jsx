@@ -6,18 +6,18 @@ const TopBar = ({ onToggleTheme }) => {
   return (
     <>
       {/* Small name mark (upper-left area, above sidebar in some frames — placed near top-left area) */}
-      <div className="fixed top-10 left-8 md:left-14 z-40 select-none">
+      <div className="fixed top-6 left-5 md:top-10 md:left-14 z-40 select-none">
         <div className="flex items-center gap-3">
           <div className="h-[8px] w-[8px] bg-[#6b3aef]" />
-          <span className="text-foreground/80 text-[11px] tracking-[0.32em] uppercase">
+          <span className="text-foreground/80 text-[10px] md:text-[11px] tracking-[0.32em] uppercase">
             SN.dev
           </span>
         </div>
       </div>
 
       {/* Top-right name + theme toggle */}
-      <div className="fixed top-8 right-10 md:right-16 z-40 select-none flex items-center gap-4">
-        <span className="text-foreground/85 text-[11px] tracking-[0.32em] uppercase">
+      <div className="fixed top-5 right-5 md:top-8 md:right-16 z-40 select-none flex items-center gap-4">
+        <span className="hidden sm:inline text-foreground/85 text-[11px] tracking-[0.32em] uppercase">
           {profile.nameShort}
         </span>
         <ThemeToggle onToggle={onToggleTheme} />

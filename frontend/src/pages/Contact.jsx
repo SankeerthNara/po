@@ -5,7 +5,7 @@ import { profile, socials } from "../mock";
 
 const Contact = () => {
   return (
-    <section className="relative z-10 min-h-screen w-full pl-[220px] pr-24 md:pl-[260px] md:pr-32 pt-32 pb-24 flex flex-col">
+    <section className="relative z-10 min-h-screen w-full px-6 pt-28 pb-40 md:pl-[220px] md:pr-24 md:pt-32 md:pb-24 lg:pl-[260px] lg:pr-32 flex flex-col">
       <div className="max-w-[1000px]">
         <motion.span
           initial={{ opacity: 0, y: 12 }}
@@ -19,7 +19,7 @@ const Contact = () => {
           initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.9, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
-          className="mt-6 text-foreground font-light text-[64px] md:text-[104px] leading-[1.05] tracking-[-0.02em]"
+          className="mt-6 text-foreground font-light text-[40px] sm:text-[56px] md:text-[104px] leading-[1.05] tracking-[-0.02em]"
           style={{ fontFamily: "'Instrument Sans', 'Inter', sans-serif" }}
         >
           Get in
@@ -55,7 +55,7 @@ const Contact = () => {
                   {s.label}
                 </div>
                 <div
-                  className="mt-2 text-foreground text-[24px] md:text-[28px] font-light tracking-[-0.01em] group-hover:text-[#a78dff] transition-colors duration-500"
+                  className="mt-2 text-foreground text-[19px] sm:text-[22px] md:text-[28px] font-light tracking-[-0.01em] group-hover:text-[#a78dff] transition-colors duration-500"
                   style={{ fontFamily: "'Instrument Sans', 'Inter', sans-serif" }}
                 >
                   {s.handle}
