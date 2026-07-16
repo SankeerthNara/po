@@ -3,7 +3,7 @@
 export const profile = {
   name: "Sankeerth Nara",
   nameShort: "SANKEERTH NARA",
-  headline: ["Software", "Developer", "& Builder."],
+  headline: ["Student,", "Developer", "& Builder."],
   role: "Backend  Full-Stack  AI/CV",
   location: "IIIT Hyderabad",
   year: "25",
