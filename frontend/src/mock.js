@@ -187,10 +187,10 @@ export const goals = [
 ];
 
 export const socials = [
+  { label: "Email", handle: "sankeerthnara@gmail.com", href: "mailto:sankeerthnara@gmail.com"},
   { label: "GitHub", handle: "@SankeerthNara", href: "https://github.com/SankeerthNara" },
   { label: "LinkedIn", handle: "sankeerth-nara", href: "https://www.linkedin.com/in/sankeerth-nara-412ab3373/" },
-  { label: "Instagram", handle: "Sankeerth Nara", href: "https://www.instagram.com/sankeerth_nara/ " },
-  { label: "GitHub Pages", handle: "sankeerthnara.github.io", href: "https://sankeerthnara.github.io" }
+  { label: "Instagram", handle: "Sankeerth Nara", href: "https://www.instagram.com/sankeerth_nara/ " }
 ];
 
 export const navItems = [
