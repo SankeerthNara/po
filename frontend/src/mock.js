@@ -47,7 +47,7 @@ export const projects = [
     summary: "A multiplayer Tic-Tac-Toe application that authenticates players using facial recognition before gameplay, combining computer vision with interactive game development.",
     accent: "#6b3aef",
     year: "2026",
-    codeUrl: "https://github.com/SankeerthNara/project-team-3",
+    codeUrl: "https://github.com/SankeerthNara/tic-tac-toe",
     liveUrl: ""
   },
   {
