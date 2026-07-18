@@ -23,7 +23,7 @@ export const projects = [
     summary: "Implemented the classic strategy board game Twixt as a command-line application featuring complete game logic, move validation and an interactive gameplay experience.",
     accent: "#6b3aef",
     year: "2025",
-    codeUrl: "https://github.com/SankeerthNara/course-project-phase-2-SankeerthNara",
+    codeUrl: "https://github.com/SankeerthNara/CLI-twixt",
     liveUrl: ""
   },
   {
