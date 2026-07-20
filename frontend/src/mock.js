@@ -78,7 +78,7 @@ export const openSource = [
     tag: "Open Source",
     points: [
       {
-        text: "Remove duplicate/conflicting postcss.config.mjs , Closes #100",
+        text: "Removed the duplicate frontend/postcss.config.mjs to eliminate conflicting PostCSS settings. It referenced @tailwindcss/postcss (not installed), which caused build issues with the Tailwind v4 setup.",
         url: "https://github.com/guidewire-oss/teams360/pull/135"
       }
     ]
