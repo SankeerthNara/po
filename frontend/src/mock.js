@@ -66,13 +66,23 @@ export const projects = [
 
 // OPEN-SOURCE-STATS:START
 export const openSourceStats = {
-  totalMergedPRs: 14,
+  totalMergedPRs: 15,
   searchUrl: "https://github.com/search?q=is%3Apr%20is%3Amerged%20author%3ASankeerthNara&type=pullrequests"
 };
 // OPEN-SOURCE-STATS:END
 
 // OPEN-SOURCE:START
 export const openSource = [
+  {
+    org: "teams360",
+    tag: "Open Source",
+    points: [
+      {
+        text: "Remove duplicate/conflicting postcss.config.mjs , Closes #100",
+        url: "https://github.com/guidewire-oss/teams360/pull/135"
+      }
+    ]
+  },
   {
     org: "Kepler",
     tag: "Frontend  Design",
