@@ -66,7 +66,7 @@ export const projects = [
 
 // OPEN-SOURCE-STATS:START
 export const openSourceStats = {
-  totalMergedPRs: 15,
+  totalMergedPRs: 16,
   searchUrl: "https://github.com/search?q=is%3Apr%20is%3Amerged%20author%3ASankeerthNara&type=pullrequests"
 };
 // OPEN-SOURCE-STATS:END
@@ -74,11 +74,21 @@ export const openSourceStats = {
 // OPEN-SOURCE:START
 export const openSource = [
   {
+    org: "YieldVault-Frontend",
+    tag: "Open Source",
+    points: [
+      {
+        text: "Add testnet/mainnet network switcher",
+        url: "https://github.com/YieldVault-Org/YieldVault-Frontend/pull/234"
+      }
+    ]
+  },
+  {
     org: "teams360",
     tag: "Open Source",
     points: [
       {
-        text: "Removed the duplicate frontend/postcss.config.mjs to eliminate conflicting PostCSS settings. It referenced @tailwindcss/postcss (not installed), which caused build issues with the Tailwind v4 setup.",
+        text: "Remove duplicate/conflicting postcss.config.mjs , Closes #100",
         url: "https://github.com/guidewire-oss/teams360/pull/135"
       }
     ]
