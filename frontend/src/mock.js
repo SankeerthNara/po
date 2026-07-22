@@ -66,7 +66,7 @@ export const projects = [
 
 // OPEN-SOURCE-STATS:START
 export const openSourceStats = {
-  totalMergedPRs: 17,
+  totalMergedPRs: 18,
   searchUrl: "https://github.com/search?q=is%3Apr%20is%3Amerged%20author%3ASankeerthNara&type=pullrequests"
 };
 // OPEN-SOURCE-STATS:END
@@ -74,11 +74,25 @@ export const openSourceStats = {
 // OPEN-SOURCE:START
 export const openSource = [
   {
+    org: "db (IN3PIRE)",
+    tag: "Docs",
+    points: [
+      {
+        text: "feat: add spinner to db query command (closes #63)",
+        url: "https://github.com/IN3PIRE/db/pull/65"
+      },
+      {
+        text: "Updated CHANGELOG.md to reflect recent project changes.",
+        url: "https://github.com/IN3PIRE/db/pull/18"
+      }
+    ]
+  },
+  {
     org: "Kepler",
     tag: "Frontend  Design",
     points: [
       {
-        text: "Added global keyboard shortcut system",
+        text: "feat: add global keyboard shortcut system (closes #83)",
         url: "https://github.com/7-Blocks/Kepler/pull/119"
       },
       {
@@ -102,7 +116,7 @@ export const openSource = [
     tag: "Open Source",
     points: [
       {
-        text: "Removed duplicate/conflicting postcss.config.mjs",
+        text: "Remove duplicate/conflicting postcss.config.mjs , Closes #100",
         url: "https://github.com/guidewire-oss/teams360/pull/135"
       }
     ]
@@ -156,16 +170,6 @@ export const openSource = [
       {
         text: "Identified and fixed an IDOR vulnerability where any authenticated user could retrieve another user's email and verification status by guessing their UUID — gated the endpoint behind workspace membership and added a reduced public response shape.",
         url: "https://github.com/Devlaner/loomy/pull/40"
-      }
-    ]
-  },
-  {
-    org: "db (IN3PIRE)",
-    tag: "Docs",
-    points: [
-      {
-        text: "Updated CHANGELOG.md to reflect recent project changes.",
-        url: "https://github.com/IN3PIRE/db/pull/18"
       }
     ]
   },
