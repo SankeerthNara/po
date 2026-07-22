@@ -66,7 +66,7 @@ export const projects = [
 
 // OPEN-SOURCE-STATS:START
 export const openSourceStats = {
-  totalMergedPRs: 18,
+  totalMergedPRs: 21,
   searchUrl: "https://github.com/search?q=is%3Apr%20is%3Amerged%20author%3ASankeerthNara&type=pullrequests"
 };
 // OPEN-SOURCE-STATS:END
@@ -77,6 +77,18 @@ export const openSource = [
     org: "db (IN3PIRE)",
     tag: "Docs",
     points: [
+      {
+        text: "Add --json flag to db connect",
+        url: "https://github.com/IN3PIRE/db/pull/68"
+      },
+      {
+        text: "Add --json flag to db config list; quiet dotenv output (#61)",
+        url: "https://github.com/IN3PIRE/db/pull/67"
+      },
+      {
+        text: "Add --json flag to db project list and db project inspect (#62)",
+        url: "https://github.com/IN3PIRE/db/pull/66"
+      },
       {
         text: "feat: add spinner to db query command (closes #63)",
         url: "https://github.com/IN3PIRE/db/pull/65"
