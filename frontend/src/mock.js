@@ -78,7 +78,7 @@ export const openSource = [
     tag: "Frontend  Design",
     points: [
       {
-        text: "feat: add global keyboard shortcut system (closes #83)",
+        text: "Added global keyboard shortcut system",
         url: "https://github.com/7-Blocks/Kepler/pull/119"
       },
       {
