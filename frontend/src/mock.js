@@ -102,7 +102,7 @@ export const openSource = [
     tag: "Open Source",
     points: [
       {
-        text: "Remove duplicate/conflicting postcss.config.mjs , Closes #100",
+        text: "Removed duplicate/conflicting postcss.config.mjs",
         url: "https://github.com/guidewire-oss/teams360/pull/135"
       }
     ]
