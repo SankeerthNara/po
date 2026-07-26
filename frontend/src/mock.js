@@ -66,13 +66,31 @@ export const projects = [
 
 // OPEN-SOURCE-STATS:START
 export const openSourceStats = {
-  totalMergedPRs: 21,
+  totalMergedPRs: 22,
   searchUrl: "https://github.com/search?q=is%3Apr%20is%3Amerged%20author%3ASankeerthNara&type=pullrequests"
 };
 // OPEN-SOURCE-STATS:END
 
 // OPEN-SOURCE:START
 export const openSource = [
+  {
+    org: "Kepler",
+    tag: "Frontend  Design",
+    points: [
+      {
+        text: "feat(satellites): add interactive spotlight effect for hover/select (#95)",
+        url: "https://github.com/7-Blocks/Kepler/pull/142"
+      },
+      {
+        text: "feat: add global keyboard shortcut system (closes #83)",
+        url: "https://github.com/7-Blocks/Kepler/pull/119"
+      },
+      {
+        text: "Built a custom 404 Not Found page matching Kepler's dashboard design system, featuring an animated orbital debris SVG scene and a catch-all route for previously unmatched paths.",
+        url: "https://github.com/7-Blocks/Kepler/pull/47"
+      }
+    ]
+  },
   {
     org: "db (IN3PIRE)",
     tag: "Docs",
@@ -96,20 +114,6 @@ export const openSource = [
       {
         text: "Updated CHANGELOG.md to reflect recent project changes.",
         url: "https://github.com/IN3PIRE/db/pull/18"
-      }
-    ]
-  },
-  {
-    org: "Kepler",
-    tag: "Frontend  Design",
-    points: [
-      {
-        text: "feat: add global keyboard shortcut system (closes #83)",
-        url: "https://github.com/7-Blocks/Kepler/pull/119"
-      },
-      {
-        text: "Built a custom 404 Not Found page matching Kepler's dashboard design system, featuring an animated orbital debris SVG scene and a catch-all route for previously unmatched paths.",
-        url: "https://github.com/7-Blocks/Kepler/pull/47"
       }
     ]
   },
