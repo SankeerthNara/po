@@ -66,13 +66,23 @@ export const projects = [
 
 // OPEN-SOURCE-STATS:START
 export const openSourceStats = {
-  totalMergedPRs: 22,
+  totalMergedPRs: 23,
   searchUrl: "https://github.com/search?q=is%3Apr%20is%3Amerged%20author%3ASankeerthNara&type=pullrequests"
 };
 // OPEN-SOURCE-STATS:END
 
 // OPEN-SOURCE:START
 export const openSource = [
+  {
+    org: "firefox-ios",
+    tag: "Open Source",
+    points: [
+      {
+        text: "Remove FXIOS-16368 [Periphery] Remove unused GleanWrapper functions",
+        url: "https://github.com/mozilla-mobile/firefox-ios/pull/34822"
+      }
+    ]
+  },
   {
     org: "Kepler",
     tag: "Frontend  Design",
