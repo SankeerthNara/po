@@ -66,7 +66,7 @@ export const projects = [
 
 // OPEN-SOURCE-STATS:START
 export const openSourceStats = {
-  totalMergedPRs: 24,
+  totalMergedPRs: 25,
   searchUrl: "https://github.com/search?q=is%3Apr%20is%3Amerged%20author%3ASankeerthNara&type=pullrequests"
 };
 // OPEN-SOURCE-STATS:END
@@ -77,6 +77,10 @@ export const openSource = [
     org: "firefox-ios",
     tag: "Open Source",
     points: [
+      {
+        text: "Remove FXIOS-16371 [Translations] Remove dead engine/service methods",
+        url: "https://github.com/mozilla-mobile/firefox-ios/pull/34812"
+      },
       {
         text: "Remove FXIOS-16367 [NotificationManager] Unused methods removed",
         url: "https://github.com/mozilla-mobile/firefox-ios/pull/34830"
