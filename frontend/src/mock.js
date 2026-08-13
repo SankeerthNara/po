@@ -61,6 +61,18 @@ export const projects = [
     year: "2026",
     codeUrl: "https://github.com/SankeerthNara/Shuttle",
     liveUrl: "https://www.sdstpscourt.xyz"
+  },
+  {
+    id: "Music Player",
+    number: "05",
+    title: "Command-Line Music Player",
+    category: "Music Editor",
+    stack: "C",
+    summary: "A Basic Command Line Music Player with pause/play , prev/next and other functionalities",
+    accent: "#6b3aef",
+    year: "2025",
+    codeUrl: "https://github.com/SankeerthNara/Command-Line-Music-Player",
+    liveUrl: ""
   }
 ];
 
