@@ -78,7 +78,7 @@ export const projects = [
 
 // OPEN-SOURCE-STATS:START
 export const openSourceStats = {
-  totalMergedPRs: 26,
+  totalMergedPRs: 27,
   searchUrl: "https://github.com/search?q=is%3Apr%20is%3Amerged%20author%3ASankeerthNara&type=pullrequests"
 };
 // OPEN-SOURCE-STATS:END
@@ -86,19 +86,13 @@ export const openSourceStats = {
 // OPEN-SOURCE:START
 export const openSource = [
   {
-    org: "civilization-operating-system",
-    tag: "Open Source",
-    points: [
-      {
-        text: "Make frontend mobile responsive",
-        url: "https://github.com/open-civilization-platform/civilization-operating-system/pull/63"
-      }
-    ]
-  },
-  {
     org: "firefox-ios",
     tag: "Open Source",
     points: [
+      {
+        text: "Refactor FXIOS-15358 [Microsurvey] Use @Copyable macro for MicrosurveyState",
+        url: "https://github.com/mozilla-mobile/firefox-ios/pull/35109"
+      },
       {
         text: "Remove FXIOS-16371 [Translations] Remove dead engine/service methods",
         url: "https://github.com/mozilla-mobile/firefox-ios/pull/34812"
@@ -110,6 +104,16 @@ export const openSource = [
       {
         text: "Remove FXIOS-16368 [Periphery] Remove unused GleanWrapper functions",
         url: "https://github.com/mozilla-mobile/firefox-ios/pull/34822"
+      }
+    ]
+  },
+  {
+    org: "civilization-operating-system",
+    tag: "Open Source",
+    points: [
+      {
+        text: "Make frontend mobile responsive",
+        url: "https://github.com/open-civilization-platform/civilization-operating-system/pull/63"
       }
     ]
   },
