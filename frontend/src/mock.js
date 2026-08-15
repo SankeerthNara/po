@@ -78,13 +78,23 @@ export const projects = [
 
 // OPEN-SOURCE-STATS:START
 export const openSourceStats = {
-  totalMergedPRs: 27,
+  totalMergedPRs: 28,
   searchUrl: "https://github.com/search?q=is%3Apr%20is%3Amerged%20author%3ASankeerthNara&type=pullrequests"
 };
 // OPEN-SOURCE-STATS:END
 
 // OPEN-SOURCE:START
 export const openSource = [
+  {
+    org: "PersonalClawApps",
+    tag: "Open Source",
+    points: [
+      {
+        text: "docs: add license badge and fix app count in apps README , Closes #13",
+        url: "https://github.com/PersonalClaw/PersonalClawApps/pull/16"
+      }
+    ]
+  },
   {
     org: "firefox-ios",
     tag: "Open Source",
