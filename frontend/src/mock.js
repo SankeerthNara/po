@@ -78,13 +78,23 @@ export const projects = [
 
 // OPEN-SOURCE-STATS:START
 export const openSourceStats = {
-  totalMergedPRs: 28,
+  totalMergedPRs: 29,
   searchUrl: "https://github.com/search?q=is%3Apr%20is%3Amerged%20author%3ASankeerthNara&type=pullrequests"
 };
 // OPEN-SOURCE-STATS:END
 
 // OPEN-SOURCE:START
 export const openSource = [
+  {
+    org: "xrblocks",
+    tag: "Open Source",
+    points: [
+      {
+        text: "Fix read-buffer composition in OcclusionPass",
+        url: "https://github.com/google/xrblocks/pull/533"
+      }
+    ]
+  },
   {
     org: "PersonalClawApps",
     tag: "Open Source",
