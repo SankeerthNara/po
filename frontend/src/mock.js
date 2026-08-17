@@ -78,7 +78,7 @@ export const projects = [
 
 // OPEN-SOURCE-STATS:START
 export const openSourceStats = {
-  totalMergedPRs: 29,
+  totalMergedPRs: 28,
   searchUrl: "https://github.com/search?q=is%3Apr%20is%3Amerged%20author%3ASankeerthNara&type=pullrequests"
 };
 // OPEN-SOURCE-STATS:END
@@ -230,16 +230,6 @@ export const openSource = [
       {
         text: "Added relative timestamps with hover-for-absolute-time display for improved readability.",
         url: "https://github.com/nbkdoesntknowcoding/mnema/pull/79"
-      }
-    ]
-  },
-  {
-    org: "llama.cpp-fork",
-    tag: "Docs",
-    points: [
-      {
-        text: "Wrote a beginner-friendly getting-started guide covering installation, downloading models, and running first inference with llama-cli and llama-server.",
-        url: "https://github.com/ghshhf/llama.cpp-fork/pull/11"
       }
     ]
   },
