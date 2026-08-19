@@ -78,13 +78,23 @@ export const projects = [
 
 // OPEN-SOURCE-STATS:START
 export const openSourceStats = {
-  totalMergedPRs: 28,
+  totalMergedPRs: 29,
   searchUrl: "https://github.com/search?q=is%3Apr%20is%3Amerged%20author%3ASankeerthNara&type=pullrequests"
 };
 // OPEN-SOURCE-STATS:END
 
 // OPEN-SOURCE:START
 export const openSource = [
+  {
+    org: "netzgrafik-editor-frontend",
+    tag: "Open Source",
+    points: [
+      {
+        text: "Show language selector in standalone mode (#1234)",
+        url: "https://github.com/OpenRailAssociation/netzgrafik-editor-frontend/pull/1239"
+      }
+    ]
+  },
   {
     org: "xrblocks",
     tag: "Open Source",
