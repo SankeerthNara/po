@@ -86,7 +86,7 @@ export const openSourceStats = {
 // OPEN-SOURCE:START
 export const openSource = [
   {
-    org: "microsoft",
+    org: "Microsoft",
     repo: "aspire",
     tag: "Open Source",
     points: [
@@ -116,7 +116,7 @@ export const openSource = [
     ]
   },
   {
-    org: "google",
+    org: "Google",
     repo: "xrblocks",
     tag: "Open Source",
     points: [
@@ -127,7 +127,7 @@ export const openSource = [
     ]
   },
   {
-    org: "mozilla-mobile",
+    org: "Mozilla-Mobile",
     repo: "firefox-ios",
     tag: "Open Source",
     points: [
