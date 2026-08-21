@@ -218,7 +218,7 @@ const Work = () => {
               Open Source
             </h3>
             <span className="text-foreground/40 text-[11px] tracking-[0.3em] uppercase">
-              contributions
+              Top-Contributions
             </span>
             {openSourceStats?.totalMergedPRs ? (
               <a
