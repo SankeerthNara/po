@@ -78,13 +78,31 @@ export const projects = [
 
 // OPEN-SOURCE-STATS:START
 export const openSourceStats = {
-  totalMergedPRs: 29,
+  totalMergedPRs: 32,
   searchUrl: "https://github.com/search?q=is%3Apr%20is%3Amerged%20author%3ASankeerthNara&type=pullrequests"
 };
 // OPEN-SOURCE-STATS:END
 
 // OPEN-SOURCE:START
 export const openSource = [
+  {
+    org: "aspire",
+    tag: "Open Source",
+    points: [
+      {
+        text: "Surface deploy, publish, and pipeline actions in Aspire pane",
+        url: "https://github.com/microsoft/aspire/pull/19466"
+      },
+      {
+        text: "Expose Aspire project creation workflows",
+        url: "https://github.com/microsoft/aspire/pull/19539"
+      },
+      {
+        text: "Prompt for an AppHost when a directory launch is ambiguous",
+        url: "https://github.com/microsoft/aspire/pull/19541"
+      }
+    ]
+  },
   {
     org: "netzgrafik-editor-frontend",
     tag: "Open Source",
