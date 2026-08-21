@@ -236,7 +236,7 @@ const Work = () => {
           <ul className="divide-y divide-foreground/[0.06] border-y border-foreground/[0.06]">
             {visibleOpenSource.map((os, i) => (
               <li
-                key={os.org}
+                key={`${os.org}/${os.repo}`}
                 className="group grid grid-cols-1 md:grid-cols-[60px_220px_1fr] gap-6 py-8 hover:bg-foreground/[0.015] transition-colors duration-300"
               >
                 <span className="text-foreground/35 text-[12px] tracking-[0.3em] uppercase">
@@ -247,7 +247,9 @@ const Work = () => {
                     className="text-foreground text-[22px] leading-tight font-light"
                     style={{ fontFamily: "'Instrument Sans', 'Inter', sans-serif" }}
                   >
-                    {os.org}
+                    <span className="text-[#6b3aef]">{os.org}</span>
+                    <span className="text-foreground/40">/</span>
+                    {os.repo}
                   </h4>
                   <span className="mt-1 inline-block text-[#6b3aef] text-[11px] tracking-[0.3em] uppercase">
                     {os.tag}

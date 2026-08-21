@@ -86,7 +86,8 @@ export const openSourceStats = {
 // OPEN-SOURCE:START
 export const openSource = [
   {
-    org: "aspire",
+    org: "microsoft",
+    repo: "aspire",
     tag: "Open Source",
     points: [
       {
@@ -104,7 +105,8 @@ export const openSource = [
     ]
   },
   {
-    org: "netzgrafik-editor-frontend",
+    org: "OpenRailAssociation",
+    repo: "netzgrafik-editor-frontend",
     tag: "Open Source",
     points: [
       {
@@ -114,7 +116,8 @@ export const openSource = [
     ]
   },
   {
-    org: "xrblocks",
+    org: "google",
+    repo: "xrblocks",
     tag: "Open Source",
     points: [
       {
@@ -124,17 +127,8 @@ export const openSource = [
     ]
   },
   {
-    org: "PersonalClawApps",
-    tag: "Open Source",
-    points: [
-      {
-        text: "docs: add license badge and fix app count in apps README , Closes #13",
-        url: "https://github.com/PersonalClaw/PersonalClawApps/pull/16"
-      }
-    ]
-  },
-  {
-    org: "firefox-ios",
+    org: "mozilla-mobile",
+    repo: "firefox-ios",
     tag: "Open Source",
     points: [
       {
@@ -152,146 +146,6 @@ export const openSource = [
       {
         text: "Remove FXIOS-16368 [Periphery] Remove unused GleanWrapper functions",
         url: "https://github.com/mozilla-mobile/firefox-ios/pull/34822"
-      }
-    ]
-  },
-  {
-    org: "civilization-operating-system",
-    tag: "Open Source",
-    points: [
-      {
-        text: "Make frontend mobile responsive",
-        url: "https://github.com/open-civilization-platform/civilization-operating-system/pull/63"
-      }
-    ]
-  },
-  {
-    org: "Kepler",
-    tag: "Frontend  Design",
-    points: [
-      {
-        text: "feat(satellites): add interactive spotlight effect for hover/select (#95)",
-        url: "https://github.com/7-Blocks/Kepler/pull/142"
-      },
-      {
-        text: "feat: add global keyboard shortcut system (closes #83)",
-        url: "https://github.com/7-Blocks/Kepler/pull/119"
-      },
-      {
-        text: "Built a custom 404 Not Found page matching Kepler's dashboard design system, featuring an animated orbital debris SVG scene and a catch-all route for previously unmatched paths.",
-        url: "https://github.com/7-Blocks/Kepler/pull/47"
-      }
-    ]
-  },
-  {
-    org: "db (IN3PIRE)",
-    tag: "Docs",
-    points: [
-      {
-        text: "Add --json flag to db connect",
-        url: "https://github.com/IN3PIRE/db/pull/68"
-      },
-      {
-        text: "Add --json flag to db config list; quiet dotenv output (#61)",
-        url: "https://github.com/IN3PIRE/db/pull/67"
-      },
-      {
-        text: "Add --json flag to db project list and db project inspect (#62)",
-        url: "https://github.com/IN3PIRE/db/pull/66"
-      },
-      {
-        text: "feat: add spinner to db query command (closes #63)",
-        url: "https://github.com/IN3PIRE/db/pull/65"
-      },
-      {
-        text: "Updated CHANGELOG.md to reflect recent project changes.",
-        url: "https://github.com/IN3PIRE/db/pull/18"
-      }
-    ]
-  },
-  {
-    org: "YieldVault-Frontend",
-    tag: "Open Source",
-    points: [
-      {
-        text: "Add testnet/mainnet network switcher",
-        url: "https://github.com/YieldVault-Org/YieldVault-Frontend/pull/234"
-      }
-    ]
-  },
-  {
-    org: "teams360",
-    tag: "Open Source",
-    points: [
-      {
-        text: "Remove duplicate/conflicting postcss.config.mjs , Closes #100",
-        url: "https://github.com/guidewire-oss/teams360/pull/135"
-      }
-    ]
-  },
-  {
-    org: "Termix",
-    tag: "Frontend  UX",
-    points: [
-      {
-        text: "Fixed poor-contrast autocomplete suggestion text in the command autocomplete dropdown so it stays legible across all themes and accent colors.",
-        url: "https://github.com/Termix-SSH/Termix/pull/1061"
-      },
-      {
-        text: "Added an \"Open File Manager\" option to the terminal tab's right-click context menu, wiring TabBar and AppShell to open a file browser directly from a terminal session.",
-        url: "https://github.com/Termix-SSH/Termix/pull/1046"
-      }
-    ]
-  },
-  {
-    org: "Mnema",
-    tag: "UX  Polish",
-    points: [
-      {
-        text: "Replaced the plain \"No sessions found\" text with a styled empty-state card (icon, heading, description, and a \"Clear filters\" CTA) matching the app's empty-state convention.",
-        url: "https://github.com/nbkdoesntknowcoding/mnema/pull/88"
-      },
-      {
-        text: "Added icon-based empty states with clearer, tab-specific copy to the Access Requests inbox for both incoming and outgoing requests.",
-        url: "https://github.com/nbkdoesntknowcoding/mnema/pull/80"
-      },
-      {
-        text: "Added relative timestamps with hover-for-absolute-time display for improved readability.",
-        url: "https://github.com/nbkdoesntknowcoding/mnema/pull/79"
-      }
-    ]
-  },
-  {
-    org: "Loomy",
-    tag: "Security  Testing",
-    points: [
-      {
-        text: "Identified and fixed an IDOR vulnerability where any authenticated user could retrieve another user's email and verification status by guessing their UUID — gated the endpoint behind workspace membership and added a reduced public response shape.",
-        url: "https://github.com/Devlaner/loomy/pull/40"
-      }
-    ]
-  },
-  {
-    org: "CureCart",
-    tag: "Docs  Design",
-    points: [
-      {
-        text: "Enhanced the About Us page and rewrote it in a more professional voice.",
-        url: "https://github.com/Princeag1310/CureCart/pull/38"
-      },
-      {
-        text: "Designed and added a professional README banner to improve the repository's presentation.",
-        url: "https://github.com/Princeag1310/CureCart/pull/36"
-      }
-    ]
-  },
-  {
-    org: "kakunin-mcp",
-    tag: "Docs  Planning",
-    points: [
-      {
-        text: "Created and added a comprehensive ROADMAP.md outlining the project's future direction and development milestones.",
-        url: "https://github.com/kakunin-ai/kakunin-mcp/pull/13"
       }
     ]
   }
