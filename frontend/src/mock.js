@@ -105,17 +105,6 @@ export const openSource = [
     ]
   },
   {
-    org: "OpenRailAssociation",
-    repo: "netzgrafik-editor-frontend",
-    tag: "Open Source",
-    points: [
-      {
-        text: "Show language selector in standalone mode (#1234)",
-        url: "https://github.com/OpenRailAssociation/netzgrafik-editor-frontend/pull/1239"
-      }
-    ]
-  },
-  {
     org: "Google",
     repo: "xrblocks",
     tag: "Open Source",
