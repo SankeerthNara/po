@@ -78,13 +78,23 @@ export const projects = [
 
 // OPEN-SOURCE-STATS:START
 export const openSourceStats = {
-  totalMergedPRs: 33,
+  totalMergedPRs: 34,
   searchUrl: "https://github.com/search?q=is%3Apr%20is%3Amerged%20author%3ASankeerthNara&type=pullrequests"
 };
 // OPEN-SOURCE-STATS:END
 
 // OPEN-SOURCE:START
 export const openSource = [
+  {
+    org: "hve-core",
+    tag: "Open Source",
+    points: [
+      {
+        text: "docs: fix stale marketplace locator description in ai-artifacts-commo…",
+        url: "https://github.com/microsoft/hve-core/pull/2777"
+      }
+    ]
+  },
   {
     org: "aspire",
     tag: "Open Source",
