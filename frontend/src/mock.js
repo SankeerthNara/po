@@ -234,12 +234,12 @@ export const openSource = [
     ]
   },
   {
-    org: "teams360",
+    org: "teamhealthcheck",
     tag: "Open Source",
     points: [
       {
         text: "Remove duplicate/conflicting postcss.config.mjs , Closes #100",
-        url: "https://github.com/guidewire-oss/teams360/pull/135"
+        url: "https://github.com/guidewire-oss/teamhealthcheck/pull/135"
       }
     ]
   },
