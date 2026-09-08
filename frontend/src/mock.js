@@ -78,13 +78,23 @@ export const projects = [
 
 // OPEN-SOURCE-STATS:START
 export const openSourceStats = {
-  totalMergedPRs: 34,
+  totalMergedPRs: 35,
   searchUrl: "https://github.com/search?q=is%3Apr%20is%3Amerged%20author%3ASankeerthNara&type=pullrequests"
 };
 // OPEN-SOURCE-STATS:END
 
 // OPEN-SOURCE:START
 export const openSource = [
+  {
+    org: "Aratea",
+    tag: "Open Source",
+    points: [
+      {
+        text: "docs(predictor): fix stale Structure block and document production en…",
+        url: "https://github.com/Elladriel80/Aratea/pull/205"
+      }
+    ]
+  },
   {
     org: "hve-core",
     tag: "Open Source",
