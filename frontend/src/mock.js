@@ -180,16 +180,6 @@ export const openSource = [
     ]
   },
   {
-    org: "civilization-operating-system",
-    tag: "Open Source",
-    points: [
-      {
-        text: "Make frontend mobile responsive",
-        url: "https://github.com/open-civilization-platform/civilization-operating-system/pull/63"
-      }
-    ]
-  },
-  {
     org: "Kepler",
     tag: "Frontend  Design",
     points: [
@@ -282,16 +272,6 @@ export const openSource = [
       {
         text: "Added relative timestamps with hover-for-absolute-time display for improved readability.",
         url: "https://github.com/nbkdoesntknowcoding/mnema/pull/79"
-      }
-    ]
-  },
-  {
-    org: "Loomy",
-    tag: "Security  Testing",
-    points: [
-      {
-        text: "Identified and fixed an IDOR vulnerability where any authenticated user could retrieve another user's email and verification status by guessing their UUID — gated the endpoint behind workspace membership and added a reduced public response shape.",
-        url: "https://github.com/Devlaner/loomy/pull/40"
       }
     ]
   },
