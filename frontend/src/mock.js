@@ -158,6 +158,28 @@ export const openSource = [
     ]
   },
   {
+    org: "firefox-ios",
+    tag: "Open Source",
+    points: [
+      {
+        text: "Refactor FXIOS-15358 [Microsurvey] Use @Copyable macro for MicrosurveyState",
+        url: "https://github.com/mozilla-mobile/firefox-ios/pull/35109"
+      },
+      {
+        text: "Remove FXIOS-16371 [Translations] Remove dead engine/service methods",
+        url: "https://github.com/mozilla-mobile/firefox-ios/pull/34812"
+      },
+      {
+        text: "Remove FXIOS-16367 [NotificationManager] Unused methods removed",
+        url: "https://github.com/mozilla-mobile/firefox-ios/pull/34830"
+      },
+      {
+        text: "Remove FXIOS-16368 [Periphery] Remove unused GleanWrapper functions",
+        url: "https://github.com/mozilla-mobile/firefox-ios/pull/34822"
+      }
+    ]
+  },
+  {
     org: "civilization-operating-system",
     tag: "Open Source",
     points: [
