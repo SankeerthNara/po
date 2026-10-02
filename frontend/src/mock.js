@@ -78,13 +78,43 @@ export const projects = [
 
 // OPEN-SOURCE-STATS:START
 export const openSourceStats = {
-  totalMergedPRs: 35,
+  totalMergedPRs: 41,
   searchUrl: "https://github.com/search?q=is%3Apr%20is%3Amerged%20author%3ASankeerthNara&type=pullrequests"
 };
 // OPEN-SOURCE-STATS:END
 
 // OPEN-SOURCE:START
 export const openSource = [
+  {
+    org: "CIBC-Hackathon",
+    tag: "Open Source",
+    points: [
+      {
+        text: "Design submission: Resolve360 deck (PPTX + PDF)",
+        url: "https://github.com/SankeerthNara/CIBC-Hackathon/pull/6"
+      },
+      {
+        text: "Design submission: Resolve360 deck (17 slides) as PPTX + PDF, with ge…",
+        url: "https://github.com/SankeerthNara/CIBC-Hackathon/pull/5"
+      },
+      {
+        text: "A/contracts",
+        url: "https://github.com/SankeerthNara/CIBC-Hackathon/pull/4"
+      },
+      {
+        text: "Add architecture doc",
+        url: "https://github.com/SankeerthNara/CIBC-Hackathon/pull/3"
+      },
+      {
+        text: "Bootstrap repo skeleton, CLAUDE.md, gitignore, env example, README, r…",
+        url: "https://github.com/SankeerthNara/CIBC-Hackathon/pull/2"
+      },
+      {
+        text: "Add team split, AI workflow and paste-ready prompts for both members",
+        url: "https://github.com/SankeerthNara/CIBC-Hackathon/pull/1"
+      }
+    ]
+  },
   {
     org: "Aratea",
     tag: "Open Source",
