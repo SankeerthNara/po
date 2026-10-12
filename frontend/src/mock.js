@@ -78,13 +78,49 @@ export const projects = [
 
 // OPEN-SOURCE-STATS:START
 export const openSourceStats = {
-  totalMergedPRs: 41,
+  totalMergedPRs: 43,
   searchUrl: "https://github.com/search?q=is%3Apr%20is%3Amerged%20author%3ASankeerthNara&type=pullrequests"
 };
 // OPEN-SOURCE-STATS:END
 
 // OPEN-SOURCE:START
 export const openSource = [
+  {
+    org: "aspire",
+    tag: "Open Source",
+    points: [
+      {
+        text: "Fix VS Code extension re-adding nonexistent configured AppHost path",
+        url: "https://github.com/microsoft/aspire/pull/20112"
+      },
+      {
+        text: "Add trusted fast path for extension release PRs",
+        url: "https://github.com/microsoft/aspire/pull/19608"
+      },
+      {
+        text: "Surface deploy, publish, and pipeline actions in Aspire pane",
+        url: "https://github.com/microsoft/aspire/pull/19466"
+      },
+      {
+        text: "Expose Aspire project creation workflows",
+        url: "https://github.com/microsoft/aspire/pull/19539"
+      },
+      {
+        text: "Prompt for an AppHost when a directory launch is ambiguous",
+        url: "https://github.com/microsoft/aspire/pull/19541"
+      }
+    ]
+  },
+  {
+    org: "ESW-Project",
+    tag: "Open Source",
+    points: [
+      {
+        text: "Perf/variant apps",
+        url: "https://github.com/SankeerthNara/ESW-Project/pull/1"
+      }
+    ]
+  },
   {
     org: "CIBC-Hackathon",
     tag: "Open Source",
@@ -132,28 +168,6 @@ export const openSource = [
       {
         text: "docs: fix stale marketplace locator description in ai-artifacts-commo…",
         url: "https://github.com/microsoft/hve-core/pull/2777"
-      }
-    ]
-  },
-  {
-    org: "aspire",
-    tag: "Open Source",
-    points: [
-      {
-        text: "Add trusted fast path for extension release PRs",
-        url: "https://github.com/microsoft/aspire/pull/19608"
-      },
-      {
-        text: "Surface deploy, publish, and pipeline actions in Aspire pane",
-        url: "https://github.com/microsoft/aspire/pull/19466"
-      },
-      {
-        text: "Expose Aspire project creation workflows",
-        url: "https://github.com/microsoft/aspire/pull/19539"
-      },
-      {
-        text: "Prompt for an AppHost when a directory launch is ambiguous",
-        url: "https://github.com/microsoft/aspire/pull/19541"
       }
     ]
   },
