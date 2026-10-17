@@ -166,6 +166,25 @@ if (!reduced) {
   });
 }
 
+// ---------- Theme toggle (initial theme is set inline in index.html before paint) ----------
+{
+  const btn = $('.theme-toggle');
+  const meta = $('meta[name="theme-color"]');
+  const apply = (t) => {
+    html.dataset.theme = t;
+    btn.setAttribute('aria-label', `Switch to ${t === 'dark' ? 'light' : 'dark'} theme`);
+    meta.content = t === 'dark' ? '#161513' : '#f3f1ec';
+  };
+  apply(html.dataset.theme || 'light');
+  btn.addEventListener('click', () => {
+    const next = html.dataset.theme === 'dark' ? 'light' : 'dark';
+    try { localStorage.setItem('theme', next); } catch {}
+    // Cross-fade the whole page where supported; otherwise switch instantly.
+    if (document.startViewTransition && !reduced) document.startViewTransition(() => apply(next));
+    else apply(next);
+  });
+}
+
 // Back-to-top button appears once the hero is out of view.
 ScrollTrigger.create({ trigger: '.hero', start: 'bottom 80%', onToggle: ({ isActive }) => $('.totop').classList.toggle('show', isActive), end: 'max' });
 
