@@ -214,8 +214,14 @@ button { font: inherit; color: inherit; background: none; border: 0; padding: 0;
   .hero-right { width: min(100% - 2.5rem, 30rem); margin-left: 2.5rem; }
   .service { grid-template-columns: 1fr; align-content: center; }
   .svc-num { font-size: 8rem; }
-  .card { position: relative; top: 0; height: auto; grid-template-columns: 1fr; }
-  .card-visual { aspect-ratio: 4 / 3; }
+  /* Still sticky on phones, but compact enough to fit the screen so the cards can stack. */
+  .card { top: 4.5rem; height: auto; grid-template-columns: 1fr; gap: 0.5rem; padding: 0.5rem; border-radius: 1.4rem; }
+  .card-visual { aspect-ratio: 16 / 10; border-radius: 1rem; }
+  .card-copy { gap: 0.6rem; padding: 1rem 1.1rem 1.2rem; border-radius: 1rem; }
+  .card h3 { font-size: 1.75rem; }
+  .card-copy > p:not([class]) { font-size: 0.9rem; line-height: 1.45; }
+  .card-tags { display: flex; flex-wrap: wrap; gap: 0.4rem 1rem; margin-top: 0.2rem; }
+  .card-tags li { padding: 0; border: 0; font-size: 0.8rem; }
   .quotes { grid-template-columns: 1fr; }
   .avatars { flex-direction: row; }
   .repo summary { grid-template-columns: 1fr auto; }

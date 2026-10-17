@@ -97,10 +97,13 @@ if (!reduced) {
 // ---------- Projects: cards stick and stack; the one underneath shrinks and darkens ----------
 mountVisuals(document, { reduced });
 const mm = gsap.matchMedia();
-mm.add('(min-width: 901px) and (prefers-reduced-motion: no-preference)', () => {
+mm.add('(prefers-reduced-motion: no-preference)', () => {
   const cards = $$('.card');
   cards.slice(0, -1).forEach((card, i) => {
-    gsap.to(card, { scale: 0.9, '--dim': 0.55, ease: 'none', scrollTrigger: { trigger: cards[i + 1], start: 'top bottom', end: 'top 9%', scrub: true } });
+    gsap.to(card, { scale: 0.9, '--dim': 0.55, ease: 'none', scrollTrigger: {
+        // Finish when the next card reaches its sticky spot (9vh on desktop, 4.5rem on phones).
+        trigger: cards[i + 1], start: 'top bottom', end: () => `top ${parseFloat(getComputedStyle(cards[i + 1]).top)}px`, scrub: true, invalidateOnRefresh: true,
+      } });
   });
 });
 

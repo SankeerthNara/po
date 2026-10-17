@@ -192,7 +192,7 @@ function site(el) {
       ${layer(70, 'background:rgba(242,236,244,.07)', bar(10, 16, 46, 14, 'rgba(242,236,244,.75)', 4) + bar(10, 40, 70, 6, 'rgba(242,236,244,.35)') + bar(10, 52, 58, 6, 'rgba(242,236,244,.35)') + bar(10, 72, 24, 10, '#f5b52e', 20))}
     </div></div>
     <ul style="position:absolute;left:1rem;bottom:1rem;margin:0;padding:0;list-style:none;display:grid;gap:.3rem;font:600 .8rem 'Inter Tight Variable',sans-serif;color:rgba(242,236,244,.75)">
-      ${key('rgba(232,237,245,.5)', 'Page content')}${key('rgba(250,250,250,.4)', 'Cursor glow')}${key('#7d8aa3', 'Dot-field shader')}
+      ${key('rgba(232,237,245,.5)', 'Page content')}${key('rgba(250,250,250,.4)', 'GSAP motion')}${key('#7d8aa3', 'Live GitHub data')}
     </ul>`;
   const q = gsap.utils.selector(el);
   const tl = gsap.timeline({ repeat: -1, yoyo: true, paused: true, defaults: { ease: 'sine.inOut' } });
