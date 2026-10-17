@@ -190,6 +190,7 @@ button { font: inherit; color: inherit; background: none; border: 0; padding: 0;
 
 /* ---------- Contact ---------- */
 .contact { position: relative; isolation: isolate; height: 100svh; min-height: 40rem; overflow: hidden; background: #d9d8d3; }
+.contact-stage { position: absolute; inset: 0; }
 .contact-portrait { position: absolute; bottom: 0; left: 50%; height: 88%; width: auto; max-width: none; translate: -50% 0; filter: grayscale(1) contrast(1.1);
   -webkit-mask-image: linear-gradient(to right, transparent 4%, #000 18%, #000 82%, transparent 96%); mask-image: linear-gradient(to right, transparent 4%, #000 18%, #000 82%, transparent 96%); }
 /* The marquee runs behind the portrait; blending it over the face garbled the features. */
@@ -203,8 +204,8 @@ button { font: inherit; color: inherit; background: none; border: 0; padding: 0;
 }
 .totop.show { opacity: 1; visibility: visible; translate: 0 0; }
 .totop:hover { background: var(--yellow); color: var(--black); }
-.contact-info { position: absolute; left: var(--pad); bottom: var(--pad); display: grid; gap: 0.3rem; font-size: 0.9rem; }
-.contact-info ul { display: flex; gap: 1.5rem; margin: 0.8rem 0; font-weight: 600; }
+.contact-info { position: absolute; left: var(--pad); bottom: var(--pad); display: grid; gap: 0.4rem; max-width: 24rem; padding: 1.1rem 1.25rem; border-radius: 1rem; background: rgb(217 216 211 / 0.88); font-size: 1rem; }
+.contact-info ul { display: flex; gap: 1.75rem; margin: 0.9rem 0; font-weight: 700; font-size: 1.05rem; }
 .contact-info a:hover { text-decoration: underline; }
 
 /* ---------- Small screens ---------- */
@@ -226,9 +227,16 @@ button { font: inherit; color: inherit; background: none; border: 0; padding: 0;
   .avatars { flex-direction: row; }
   .repo summary { grid-template-columns: 1fr auto; }
   .repo-meta { display: none; }
-  .contact-marquee { top: 30%; }
-  .contact-marquee span { font-size: 26vw; }
-  .contact-info { background: rgb(217 216 211 / 0.85); padding: 0.75rem; border-radius: 0.75rem; }
+  /* Phones: a shorter photo block, with the contact details below it instead of over the shirt. */
+  .contact { height: auto; min-height: 0; }
+  .contact-stage { position: relative; height: 52svh; min-height: 20rem; overflow: hidden; isolation: isolate; }
+  .contact-portrait { height: 94%; }
+  .contact-marquee { top: 24%; }
+  .contact-marquee span { font-size: 24vw; }
+  .contact-info { position: static; gap: 0.6rem; padding: 1.75rem var(--pad) 2.25rem; font-size: 1.1rem; line-height: 1.45; border-top: 1px solid var(--line); }
+  .contact-info ul { gap: 1.75rem; margin: 0.75rem 0; font-size: 1.15rem; }
+  .contact-info { max-width: none; border-radius: 0; background: none; }
+  .contact-info .muted { font-size: 0.95rem; padding-right: 4.5rem; } /* clear the back-to-top button */
 }
 
 @media (prefers-reduced-motion: reduce) {
