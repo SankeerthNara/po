@@ -51,7 +51,11 @@ STATUS: DONE + verified in recorded tour tools/video/portfolio-tour.webm (re-rec
 Playwright MCP browser_run_code_unsafe). Footer marquee runs BEHIND the portrait (blend over face looked garbled).
 Added later: fixed back-to-top button (bottom right); Problem solving section (LeetCode + Codeforces,
 scripts/fetch-cp.mjs -> src/data/cp.json, prebuild) between Projects and Open source.
-Remaining: deploy (ask user).
+DEPLOYED 2026-10-18: pushed to github.com/SankeerthNara/po (main) -> Vercel project "po" -> sankeerthnara.in.
+Layout: site lives in frontend/ because the Vercel project's Root Directory is "frontend" (Claude's Vercel
+connector is read-only for that scope, so settings were matched instead of changed). frontend/vercel.json sets Vite.
+Hourly .github/workflows/refresh-data.yml refreshes prs.json + cp.json and commits (=> redeploy).
+Old React app + backend removed from the tree; still in git history (parent e3c589d).
 
 ## 2026-10-18 REBUILD to match reference (Matthew) (CURRENT PLAN — supersedes everything below)
 User: "use https://dribbble.com/shots/22469576 as reference, I need exact animations, use playwright to record video".
