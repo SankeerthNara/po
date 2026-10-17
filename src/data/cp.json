@@ -1,0 +1,33 @@
+{
+  "updated": "2026-10-17",
+  "leetcode": {
+    "handle": "Sankeerth_Nara",
+    "solved": 228,
+    "easy": 74,
+    "medium": 143,
+    "hard": 11,
+    "activeDays": 52
+  },
+  "codeforces": {
+    "handle": "Sankeerth_Nara",
+    "rating": 1122,
+    "maxRating": 1122,
+    "rank": "newbie",
+    "solved": 43,
+    "contests": 3,
+    "history": [
+      {
+        "date": "2025-09-13",
+        "rating": 418
+      },
+      {
+        "date": "2026-09-12",
+        "rating": 958
+      },
+      {
+        "date": "2026-09-13",
+        "rating": 1122
+      }
+    ]
+  }
+}

@@ -1,0 +1,9 @@
+node_modules
+dist
+.playwright-mcp
+tools/*.png
+tools/ref
+tools/ref2
+tools/qa
+tools/video
+.claude
