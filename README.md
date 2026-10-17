@@ -2,7 +2,10 @@
 
 Personal site for Sankeerth Nara. Vite + GSAP + Lenis, no framework. Visuals after the Videaste Dribbble shot, motion after the Alexfolio Framer template (see PROGRESS.md).
 
+The site lives in `frontend/` (the Vercel project builds from that folder).
+
 ```bash
+cd frontend
 npm install
 npm run dev        # http://localhost:5173
 npm run build      # refreshes PR data, then builds to dist/
@@ -12,6 +15,7 @@ npm run build      # refreshes PR data, then builds to dist/
 
 | File | What it does |
 | --- | --- |
+| `frontend/vercel.json` | Vercel build settings (Vite, `npm run build`, output `dist`). |
 | `index.html` | Page structure. `<!--@slot-->` comments are filled at build time. |
 | `src/render.js` | Renders the project cards, open-source rows, featured-contribution quotes and org logo strip into those slots, so content is in the HTML (works without JS, crawlable). |
 | `src/data/content.js` | Hand-written copy: projects, repo summaries, nicer PR titles, skills. |
@@ -25,7 +29,7 @@ npm run build      # refreshes PR data, then builds to dist/
 
 ## Updating content
 
-- **New pull requests** appear on the next build. To refresh locally: `GITHUB_TOKEN=$(gh auth token) npm run prs`.
+- **New pull requests** appear on the next build. To refresh locally: `cd frontend && GITHUB_TOKEN=$(gh auth token) npm run prs`. A GitHub Action (`.github/workflows/refresh-data.yml`) also refreshes PR and LeetCode/Codeforces data hourly and commits it, which redeploys the site.
   Repos to leave out (coursework, onboarding) are listed at the top of `scripts/fetch-prs.mjs`.
 - **A repo summary or a clearer PR title**: add it to `repoNotes` / `titleOverrides` in `src/data/content.js`.
 - **A new project**: add an entry to `projects` in `content.js`. For an illustration, add a builder with the

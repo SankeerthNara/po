@@ -1,9 +1,9 @@
 node_modules
 dist
 .playwright-mcp
-tools/*.png
-tools/ref
-tools/ref2
-tools/qa
-tools/video
 .claude
+frontend/tools/*.png
+frontend/tools/ref
+frontend/tools/ref2
+frontend/tools/qa
+frontend/tools/video

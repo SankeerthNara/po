@@ -1,8 +1,8 @@
 // Playwright tour of the site, recorded to video. Run via the Playwright MCP `browser_run_code_unsafe`
-// (filename: tools/record.js). Needs the dev server on :5288.
+// (filename: frontend/tools/record.js). Needs the dev server on :5288.
 async (page) => {
   const W = 1440, H = 900;
-  const ctx = await page.context().browser().newContext({ viewport: { width: W, height: H }, recordVideo: { dir: 'D:/POrtfolio/tools/video', size: { width: W, height: H } } });
+  const ctx = await page.context().browser().newContext({ viewport: { width: W, height: H }, recordVideo: { dir: 'D:/POrtfolio/frontend/tools/video', size: { width: W, height: H } } });
   const p = await ctx.newPage();
   await p.goto('http://localhost:5288/');
   await p.waitForTimeout(4200); // black loader -> portrait brightens -> name slides up
