@@ -1,0 +1,397 @@
+{
+  "updated": "2026-10-17",
+  "total": 34,
+  "repos": [
+    {
+      "full": "Termix-SSH/Termix",
+      "owner": "Termix-SSH",
+      "name": "Termix",
+      "url": "https://github.com/Termix-SSH/Termix",
+      "stars": 15577,
+      "language": "TypeScript",
+      "description": "Self-hosted, plugin-based server management.",
+      "prs": [
+        {
+          "number": 1061,
+          "title": "Update Auto-complete.tsx",
+          "url": "https://github.com/Termix-SSH/Termix/pull/1061",
+          "merged": "2026-07-16"
+        },
+        {
+          "number": 1046,
+          "title": "feat: add Open File Manager to tab right-click menu",
+          "url": "https://github.com/Termix-SSH/Termix/pull/1046",
+          "merged": "2026-07-13"
+        }
+      ]
+    },
+    {
+      "full": "mozilla-mobile/firefox-ios",
+      "owner": "mozilla-mobile",
+      "name": "firefox-ios",
+      "url": "https://github.com/mozilla-mobile/firefox-ios",
+      "stars": 13055,
+      "language": "Swift",
+      "description": "Firefox for iOS",
+      "prs": [
+        {
+          "number": 35109,
+          "title": "Refactor FXIOS-15358 [Microsurvey] Use @Copyable macro for MicrosurveyState",
+          "url": "https://github.com/mozilla-mobile/firefox-ios/pull/35109",
+          "merged": "2026-08-13"
+        },
+        {
+          "number": 34812,
+          "title": "Remove FXIOS-16371 [Translations] Remove dead engine/service methods",
+          "url": "https://github.com/mozilla-mobile/firefox-ios/pull/34812",
+          "merged": "2026-07-28"
+        },
+        {
+          "number": 34830,
+          "title": "Remove FXIOS-16367 [NotificationManager] Unused methods removed",
+          "url": "https://github.com/mozilla-mobile/firefox-ios/pull/34830",
+          "merged": "2026-07-27"
+        },
+        {
+          "number": 34822,
+          "title": "Remove FXIOS-16368 [Periphery] Remove unused GleanWrapper functions",
+          "url": "https://github.com/mozilla-mobile/firefox-ios/pull/34822",
+          "merged": "2026-07-27"
+        }
+      ]
+    },
+    {
+      "full": "microsoft/aspire",
+      "owner": "microsoft",
+      "name": "aspire",
+      "url": "https://github.com/microsoft/aspire",
+      "stars": 6373,
+      "language": "C#",
+      "description": "Aspire is the tool for code-first, extensible, observable dev and deploy.",
+      "prs": [
+        {
+          "number": 20112,
+          "title": "Fix VS Code extension re-adding nonexistent configured AppHost path",
+          "url": "https://github.com/microsoft/aspire/pull/20112",
+          "merged": "2026-10-12"
+        },
+        {
+          "number": 19608,
+          "title": "Add trusted fast path for extension release PRs",
+          "url": "https://github.com/microsoft/aspire/pull/19608",
+          "merged": "2026-08-25"
+        },
+        {
+          "number": 19541,
+          "title": "Prompt for an AppHost when a directory launch is ambiguous",
+          "url": "https://github.com/microsoft/aspire/pull/19541",
+          "merged": "2026-08-21"
+        },
+        {
+          "number": 19539,
+          "title": "Expose Aspire project creation workflows",
+          "url": "https://github.com/microsoft/aspire/pull/19539",
+          "merged": "2026-08-21"
+        },
+        {
+          "number": 19466,
+          "title": "Surface deploy, publish, and pipeline actions in Aspire pane",
+          "url": "https://github.com/microsoft/aspire/pull/19466",
+          "merged": "2026-08-21"
+        }
+      ]
+    },
+    {
+      "full": "microsoft/hve-core",
+      "owner": "microsoft",
+      "name": "hve-core",
+      "url": "https://github.com/microsoft/hve-core",
+      "stars": 1531,
+      "language": "Python",
+      "description": "A refined collection of Hypervelocity Engineering components (instructions, prompts, agents, and skills) to start your project off right, or upgrade your existing projects to get the most out of GitHub Copilot",
+      "prs": [
+        {
+          "number": 2777,
+          "title": "docs: fix stale marketplace locator description in ai-artifacts-commo…",
+          "url": "https://github.com/microsoft/hve-core/pull/2777",
+          "merged": "2026-08-27"
+        }
+      ]
+    },
+    {
+      "full": "google/xrblocks",
+      "owner": "google",
+      "name": "xrblocks",
+      "url": "https://github.com/google/xrblocks",
+      "stars": 486,
+      "language": "TypeScript",
+      "description": "XR Blocks is a lightweight WebXR + AI library for rapidly prototyping advanced AI + XR experiences.",
+      "prs": [
+        {
+          "number": 533,
+          "title": "Fix read-buffer composition in OcclusionPass",
+          "url": "https://github.com/google/xrblocks/pull/533",
+          "merged": "2026-08-16"
+        }
+      ]
+    },
+    {
+      "full": "OpenRailAssociation/netzgrafik-editor-frontend",
+      "owner": "OpenRailAssociation",
+      "name": "netzgrafik-editor-frontend",
+      "url": "https://github.com/OpenRailAssociation/netzgrafik-editor-frontend",
+      "stars": 87,
+      "language": "TypeScript",
+      "description": "The Netzgrafik-Editor is a powerful software that enables the creation, modification, and analysis of regular-interval timetable.  ",
+      "prs": [
+        {
+          "number": 1239,
+          "title": "Show language selector in standalone mode",
+          "url": "https://github.com/OpenRailAssociation/netzgrafik-editor-frontend/pull/1239",
+          "merged": "2026-08-18"
+        }
+      ]
+    },
+    {
+      "full": "7-Blocks/Kepler",
+      "owner": "7-Blocks",
+      "name": "Kepler",
+      "url": "https://github.com/7-Blocks/Kepler",
+      "stars": 40,
+      "language": "TypeScript",
+      "description": "AI-Powered Autonomous Space Traffic Management Platform",
+      "prs": [
+        {
+          "number": 142,
+          "title": "feat(satellites): add interactive spotlight effect for hover/select",
+          "url": "https://github.com/7-Blocks/Kepler/pull/142",
+          "merged": "2026-07-26"
+        },
+        {
+          "number": 119,
+          "title": "feat: add global keyboard shortcut system",
+          "url": "https://github.com/7-Blocks/Kepler/pull/119",
+          "merged": "2026-07-22"
+        },
+        {
+          "number": 47,
+          "title": "feat: add custom 404 not found page",
+          "url": "https://github.com/7-Blocks/Kepler/pull/47",
+          "merged": "2026-07-16"
+        }
+      ]
+    },
+    {
+      "full": "Devlaner/loomy",
+      "owner": "Devlaner",
+      "name": "loomy",
+      "url": "https://github.com/Devlaner/loomy",
+      "stars": 7,
+      "language": "TypeScript",
+      "description": "Loomy is an open-source collaborative whiteboard. Create infinite boards, invite your team, and bring ideas to life in real time",
+      "prs": [
+        {
+          "number": 40,
+          "title": "Fix IDOR in GET /api/users/{user_id} — email leaked to any authenticated user",
+          "url": "https://github.com/Devlaner/loomy/pull/40",
+          "merged": "2026-07-10"
+        }
+      ]
+    },
+    {
+      "full": "nbkdoesntknowcoding/mnema",
+      "owner": "nbkdoesntknowcoding",
+      "name": "mnema",
+      "url": "https://github.com/nbkdoesntknowcoding/mnema",
+      "stars": 6,
+      "language": "TypeScript",
+      "description": "The context engine for AI work. Mnema is a collaborative knowledge workspace that publishes your team's docs, decisions, and workflows to any MCP-aware AI client (Claude, ChatGPT, Cursor, and more) — so your agents answer from your context, not their training data.",
+      "prs": [
+        {
+          "number": 88,
+          "title": "Fix/sessions empty state",
+          "url": "https://github.com/nbkdoesntknowcoding/mnema/pull/88",
+          "merged": "2026-07-13"
+        },
+        {
+          "number": 80,
+          "title": "Improve empty stated #73",
+          "url": "https://github.com/nbkdoesntknowcoding/mnema/pull/80",
+          "merged": "2026-07-09"
+        },
+        {
+          "number": 79,
+          "title": "Show absolute time on hover for timestamps",
+          "url": "https://github.com/nbkdoesntknowcoding/mnema/pull/79",
+          "merged": "2026-07-09"
+        }
+      ]
+    },
+    {
+      "full": "guidewire-oss/teamhealthcheck",
+      "owner": "guidewire-oss",
+      "name": "teamhealthcheck",
+      "url": "https://github.com/guidewire-oss/teamhealthcheck",
+      "stars": 5,
+      "language": "Go",
+      "description": null,
+      "prs": [
+        {
+          "number": 135,
+          "title": "Remove duplicate/conflicting postcss.config.mjs",
+          "url": "https://github.com/guidewire-oss/teamhealthcheck/pull/135",
+          "merged": "2026-07-20"
+        }
+      ]
+    },
+    {
+      "full": "Princeag1310/CureCart",
+      "owner": "Princeag1310",
+      "name": "CureCart",
+      "url": "https://github.com/Princeag1310/CureCart",
+      "stars": 3,
+      "language": "TypeScript",
+      "description": null,
+      "prs": [
+        {
+          "number": 38,
+          "title": "Updated the about us page",
+          "url": "https://github.com/Princeag1310/CureCart/pull/38",
+          "merged": "2026-07-08"
+        },
+        {
+          "number": 36,
+          "title": "Added banner to README.md",
+          "url": "https://github.com/Princeag1310/CureCart/pull/36",
+          "merged": "2026-07-08"
+        }
+      ]
+    },
+    {
+      "full": "IN3PIRE/db",
+      "owner": "IN3PIRE",
+      "name": "db",
+      "url": "https://github.com/IN3PIRE/db",
+      "stars": 1,
+      "language": "TypeScript",
+      "description": "Database branch CLI — Git-like branching for Neon Postgres. Create, diff, merge, and manage database branches from your terminal.",
+      "prs": [
+        {
+          "number": 68,
+          "title": "Add --json flag to db connect",
+          "url": "https://github.com/IN3PIRE/db/pull/68",
+          "merged": "2026-07-22"
+        },
+        {
+          "number": 67,
+          "title": "Add --json flag to db config list; quiet dotenv output",
+          "url": "https://github.com/IN3PIRE/db/pull/67",
+          "merged": "2026-07-22"
+        },
+        {
+          "number": 66,
+          "title": "Add --json flag to db project list and db project inspect",
+          "url": "https://github.com/IN3PIRE/db/pull/66",
+          "merged": "2026-07-22"
+        },
+        {
+          "number": 65,
+          "title": "feat: add spinner to db query command",
+          "url": "https://github.com/IN3PIRE/db/pull/65",
+          "merged": "2026-07-22"
+        },
+        {
+          "number": 18,
+          "title": "Updated CHANGELOG.md",
+          "url": "https://github.com/IN3PIRE/db/pull/18",
+          "merged": "2026-07-09"
+        }
+      ]
+    },
+    {
+      "full": "kakunin-ai/kakunin-mcp",
+      "owner": "kakunin-ai",
+      "name": "kakunin-mcp",
+      "url": "https://github.com/kakunin-ai/kakunin-mcp",
+      "stars": 1,
+      "language": "TypeScript",
+      "description": "MCP server for AI agent compliance — verify a certificate, check scope, and log audit events over the Model Context Protocol. Works with Claude & Cursor.",
+      "prs": [
+        {
+          "number": 13,
+          "title": "Add ROADMAP.md",
+          "url": "https://github.com/kakunin-ai/kakunin-mcp/pull/13",
+          "merged": "2026-07-08"
+        }
+      ]
+    },
+    {
+      "full": "Elladriel80/Aratea",
+      "owner": "Elladriel80",
+      "name": "Aratea",
+      "url": "https://github.com/Elladriel80/Aratea",
+      "stars": 0,
+      "language": "Python",
+      "description": "Open-source DAO trading Kalshi weather markets to fund parametric climate coverage. Phase 1 live on Arbitrum Sepolia. Contributors welcome.",
+      "prs": [
+        {
+          "number": 205,
+          "title": "docs(predictor): fix stale Structure block and document production en…",
+          "url": "https://github.com/Elladriel80/Aratea/pull/205",
+          "merged": "2026-09-08"
+        }
+      ]
+    },
+    {
+      "full": "PersonalClaw/PersonalClawApps",
+      "owner": "PersonalClaw",
+      "name": "PersonalClawApps",
+      "url": "https://github.com/PersonalClaw/PersonalClawApps",
+      "stars": 0,
+      "language": "Python",
+      "description": "First-party app bundles for PersonalClaw — 69 apps across model providers, search, speech (STT/TTS), local models, agent runtimes (ACP), channels (Slack, Discord, Telegram, email), tools, and full backend+UI apps. Each imports core only via the SDK and installs through the scanner-gated Store.",
+      "prs": [
+        {
+          "number": 16,
+          "title": "docs: add license badge and fix app count in apps README",
+          "url": "https://github.com/PersonalClaw/PersonalClawApps/pull/16",
+          "merged": "2026-08-15"
+        }
+      ]
+    },
+    {
+      "full": "open-civilization-platform/civilization-operating-system",
+      "owner": "open-civilization-platform",
+      "name": "civilization-operating-system",
+      "url": "https://github.com/open-civilization-platform/civilization-operating-system",
+      "stars": 0,
+      "language": "Java",
+      "description": "civilization-operating-system",
+      "prs": [
+        {
+          "number": 63,
+          "title": "Make frontend mobile responsive",
+          "url": "https://github.com/open-civilization-platform/civilization-operating-system/pull/63",
+          "merged": "2026-08-02"
+        }
+      ]
+    },
+    {
+      "full": "YieldVault-Org/YieldVault-Frontend",
+      "owner": "YieldVault-Org",
+      "name": "YieldVault-Frontend",
+      "url": "https://github.com/YieldVault-Org/YieldVault-Frontend",
+      "stars": 0,
+      "language": "JavaScript",
+      "description": null,
+      "prs": [
+        {
+          "number": 234,
+          "title": "Add testnet/mainnet network switcher",
+          "url": "https://github.com/YieldVault-Org/YieldVault-Frontend/pull/234",
+          "merged": "2026-07-20"
+        }
+      ]
+    }
+  ]
+}
