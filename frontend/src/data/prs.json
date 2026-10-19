@@ -7,7 +7,7 @@
       "owner": "Termix-SSH",
       "name": "Termix",
       "url": "https://github.com/Termix-SSH/Termix",
-      "stars": 15591,
+      "stars": 15590,
       "language": "TypeScript",
       "description": "Self-hosted, plugin-based server management.",
       "prs": [
@@ -65,7 +65,7 @@
       "owner": "microsoft",
       "name": "aspire",
       "url": "https://github.com/microsoft/aspire",
-      "stars": 6373,
+      "stars": 6374,
       "language": "C#",
       "description": "Aspire is the tool for code-first, extensible, observable dev and deploy.",
       "prs": [
@@ -106,7 +106,7 @@
       "owner": "microsoft",
       "name": "hve-core",
       "url": "https://github.com/microsoft/hve-core",
-      "stars": 1532,
+      "stars": 1533,
       "language": "Python",
       "description": "A refined collection of Hypervelocity Engineering components (instructions, prompts, agents, and skills) to start your project off right, or upgrade your existing projects to get the most out of GitHub Copilot",
       "prs": [
@@ -268,6 +268,23 @@
       ]
     },
     {
+      "full": "Elladriel80/Aratea",
+      "owner": "Elladriel80",
+      "name": "Aratea",
+      "url": "https://github.com/Elladriel80/Aratea",
+      "stars": 1,
+      "language": "Python",
+      "description": "Open-source DAO trading Kalshi weather markets to fund parametric climate coverage. Phase 1 live on Arbitrum Sepolia. Contributors welcome.",
+      "prs": [
+        {
+          "number": 205,
+          "title": "docs(predictor): fix stale Structure block and document production en…",
+          "url": "https://github.com/Elladriel80/Aratea/pull/205",
+          "merged": "2026-09-08"
+        }
+      ]
+    },
+    {
       "full": "IN3PIRE/db",
       "owner": "IN3PIRE",
       "name": "db",
@@ -322,23 +339,6 @@
           "title": "Add ROADMAP.md",
           "url": "https://github.com/kakunin-ai/kakunin-mcp/pull/13",
           "merged": "2026-07-08"
-        }
-      ]
-    },
-    {
-      "full": "Elladriel80/Aratea",
-      "owner": "Elladriel80",
-      "name": "Aratea",
-      "url": "https://github.com/Elladriel80/Aratea",
-      "stars": 0,
-      "language": "Python",
-      "description": "Open-source DAO trading Kalshi weather markets to fund parametric climate coverage. Phase 1 live on Arbitrum Sepolia. Contributors welcome.",
-      "prs": [
-        {
-          "number": 205,
-          "title": "docs(predictor): fix stale Structure block and document production en…",
-          "url": "https://github.com/Elladriel80/Aratea/pull/205",
-          "merged": "2026-09-08"
         }
       ]
     },
