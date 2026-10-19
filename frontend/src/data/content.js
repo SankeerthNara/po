@@ -2,6 +2,33 @@
 
 export const projects = [
   {
+    id: 'tabby',
+    category: 'AI web app, live',
+    name: 'Tabby',
+    body: 'Snap a receipt and say who had what. Gemini reads the receipt and maps your sentence to line items, the split is worked out in integer cents, and each friend gets an itemised PayPal invoice with reminders until they pay.',
+    stack: ['Next.js', 'TypeScript', 'Gemini', 'PayPal API'],
+    links: [
+      { label: 'Open the live site', href: 'https://tabby-eta-five.vercel.app' },
+      { label: 'Source code', href: 'https://github.com/SankeerthNara/Tabby' },
+    ],
+  },
+  {
+    id: 'vision',
+    category: 'Edge AI, computer vision',
+    name: 'On-Device Vision Pipeline',
+    body: 'Runs depth estimation, instance segmentation and 6-DoF pose estimation together on a live camera feed, on the NPU of a Snapdragon 8 Gen 3 dev kit. Swapping to a smaller depth model shrank it from 682 MB to 50 MB.',
+    stack: ['Kotlin', 'CameraX', 'YOLOv8-seg', 'Depth Anything V2'],
+    links: [{ label: 'Source code', href: 'https://github.com/SankeerthNara/ESW-Project' }],
+  },
+  {
+    id: 'tracker',
+    category: 'Web and Android app, live',
+    name: 'ProgressTracker',
+    body: 'One dashboard for coding progress across LeetCode, Codeforces and GitHub: problems by difficulty, contest ratings and merged pull requests, with an Android app from the same code.',
+    stack: ['Next.js', 'TypeScript', 'Capacitor'],
+    links: [{ label: 'Open the live site', href: 'https://codetrack-coral.vercel.app' }],
+  },
+  {
     id: 'faceplay',
     category: 'Computer vision',
     name: 'Face Recognition Tic-Tac-Toe',
@@ -19,6 +46,14 @@ export const projects = [
       { label: 'Open the live site', href: 'https://www.sdstpscourt.xyz' },
       { label: 'Source code', href: 'https://github.com/SankeerthNara/Shuttle' },
     ],
+  },
+  {
+    id: 'jam',
+    category: 'Game, in progress',
+    name: 'TGC Game Jam Entry',
+    body: 'Keep your torch on the vampire to catch him, clear task consoles along the way, then decide whether to reveal him or kill him. Built solo in Godot for the TGC Game Jam.',
+    stack: ['Godot', 'GDScript'],
+    links: [{ label: 'Source code', href: 'https://github.com/SankeerthNara/TGC-Game-Jam' }],
   },
   {
     id: 'twixt',
@@ -42,7 +77,7 @@ export const projects = [
     name: 'This website',
     body: 'The site you are on. Built with Vite and GSAP, and the open-source list rebuilds from the GitHub API on every deploy.',
     stack: ['JavaScript', 'GSAP', 'Lenis'],
-    links: [{ label: 'Source code', href: 'https://github.com/SankeerthNara/portfolio' }],
+    links: [{ label: 'Source code', href: 'https://github.com/SankeerthNara/po' }],
   },
 ];
 

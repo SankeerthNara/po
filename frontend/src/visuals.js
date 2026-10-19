@@ -1,6 +1,8 @@
 // Small hand-built illustrations for each project. Each returns a GSAP timeline that loops
 // while its panel is on screen and pauses otherwise.
 import gsap from 'gsap';
+import cp from './data/cp.json';
+import prs from './data/prs.json';
 
 const NS = 'http://www.w3.org/2000/svg';
 const svg = (w, h, inner) => `<svg viewBox="0 0 ${w} ${h}" xmlns="${NS}" preserveAspectRatio="xMidYMid meet">${inner}</svg>`;
@@ -201,7 +203,141 @@ function site(el) {
   return tl;
 }
 
-const BUILDERS = { faceplay, shuttle, twixt, player, site };
+// ---------- Tabby: receipt is scanned, split, and invoiced ----------
+function tabby(el) {
+  const items = [96, 70, 84, 58, 62];
+  const people = [['S', '18.40', 'Paid'], ['A', '12.75', 'Paid'], ['P', '15.10', 'Nudged']];
+  const lines = items.map((w, i) => `<rect x="44" y="${48 + i * 22}" width="${w * 0.9}" height="7" rx="3.5" fill="#0b0b0c" opacity=".55"/><rect class="tag" x="134" y="${46 + i * 22}" width="11" height="11" rx="5.5" fill="${C.accent}" opacity="0"/>`).join('');
+  const rows = people.map(([n, amt, st], i) => {
+    const y = 52 + i * 52;
+    return `<g class="person" opacity="0">
+      <circle cx="214" cy="${y}" r="15" fill="none" stroke="${C.paper}" stroke-width="1.5"/>
+      <text x="214" y="${y + 4.5}" text-anchor="middle" class="t b">${n}</text>
+      <text x="242" y="${y + 4.5}" class="t amt" data-v="${amt}">0.00</text>
+      <rect class="pill" x="300" y="${y - 11}" width="74" height="22" rx="11" fill="none" stroke="${C.slate}"/>
+      <text class="pill-t" x="337" y="${y + 4}" text-anchor="middle" data-final="${st}">Sent</text>
+    </g>`;
+  }).join('');
+  el.innerHTML = svg(400, 210, `<style>.t{font:600 13px 'Inter Tight Variable',sans-serif;fill:${C.paper}}.b{font-weight:800}.pill-t{font:600 10.5px 'Inter Tight Variable',sans-serif;fill:${C.paper}}</style>
+    <path d="M30 22h130v168l-10-6-10 6-10-6-10 6-10-6-10 6-10-6-10 6-10-6-10 6-10-6-10 6z" fill="${C.paper}"/>
+    <rect x="44" y="30" width="60" height="8" rx="4" fill="#0b0b0c"/>${lines}
+    <rect x="44" y="160" width="102" height="1.5" fill="#0b0b0c" opacity=".5"/><rect x="44" y="167" width="44" height="8" rx="4" fill="#0b0b0c"/>
+    <rect class="scan" x="26" y="22" width="138" height="3" rx="1.5" fill="${C.accent}"/>${rows}`);
+
+  const q = gsap.utils.selector(el);
+  const tl = gsap.timeline({ repeat: -1, repeatDelay: 1.4, paused: true });
+  tl.fromTo(q('.scan'), { y: 0, opacity: 1 }, { y: 150, duration: 1.3, ease: 'sine.inOut' })
+    .to(q('.scan'), { opacity: 0, duration: 0.2 })
+    .to(q('.tag'), { opacity: 1, duration: 0.25, stagger: 0.12 }, '-=0.2')
+    .to(q('.person'), { opacity: 1, duration: 0.35, stagger: 0.15 });
+  q('.amt').forEach((t, i) => {
+    const n = { v: 0 };
+    tl.to(n, { v: +t.dataset.v, duration: 0.8, ease: 'power2.out', onUpdate: () => (t.textContent = n.v.toFixed(2)) }, i ? '<0.1' : '<');
+  });
+  q('.pill-t').forEach((t, i) => {
+    const pill = t.previousElementSibling, paid = t.dataset.final === 'Paid';
+    tl.call(() => { t.textContent = t.dataset.final; }, null, `+=${i ? 0.35 : 0.6}`)
+      .to(pill, { attr: { fill: paid ? C.accent : 'none', stroke: paid ? C.accent : C.paper }, duration: 0.25 }, '<')
+      .to(t, { fill: paid ? '#0b0b0c' : C.paper, duration: 0.25 }, '<');
+  });
+  tl.to(q('.person, .tag'), { opacity: 0, duration: 0.4 }, '+=1.6')
+    .call(() => q('.pill-t').forEach((t) => { t.textContent = 'Sent'; t.style.fill = ''; }))
+    .set(q('.pill'), { attr: { fill: 'none', stroke: C.slate } })
+    .call(() => q('.amt').forEach((t) => (t.textContent = '0.00')));
+  return tl;
+}
+
+// ---------- On-device vision: camera -> depth -> segmentation + pose ----------
+function vision(el) {
+  const scene = (dx, fill, stroke) => `<g transform="translate(${dx} 0)">
+      <rect x="18" y="128" width="40" height="34" rx="3" fill="${fill[0]}" stroke="${stroke}" stroke-width="1.5"/>
+      <circle cx="84" cy="88" r="10" fill="${fill[1]}" stroke="${stroke}" stroke-width="1.5"/>
+      <path d="M68 162v-38a16 16 0 0 1 32 0v38z" fill="${fill[1]}" stroke="${stroke}" stroke-width="1.5"/>
+    </g>`;
+  const panel = (x, label) => `<rect x="${x}" y="30" width="116" height="150" rx="10" fill="#18171a" stroke="rgba(255,255,255,.12)"/><text x="${x + 58}" y="200" text-anchor="middle" class="l">${label}</text>`;
+  el.innerHTML = svg(400, 215, `<style>.l{font:600 10.5px 'Inter Tight Variable',sans-serif;fill:rgba(243,241,236,.6)}</style>
+    ${panel(12, 'Camera')}${panel(142, 'Depth')}${panel(272, 'Segment + pose')}
+    ${scene(12, ['#6b6a66', '#9a9893'], 'none')}
+    <g class="depth" opacity="0">${scene(142, ['#3b3a37', '#e9e6df'], 'none')}</g>
+    <g class="seg">${scene(272, ['none', 'none'], C.accent)}</g>
+    <g class="pose"><path d="M310 145h22" stroke="${C.paper}" stroke-width="2.5"/><path d="M310 145v-22" stroke="${C.accent}" stroke-width="2.5"/><path d="M310 145l-13 12" stroke="#9a9893" stroke-width="2.5"/></g>
+    <rect class="scan" x="14" y="31" width="112" height="2.5" fill="${C.accent}"/>`);
+
+  const q = gsap.utils.selector(el);
+  const outlines = q('.seg rect, .seg circle, .seg path');
+  outlines.forEach((s) => { const L = s.getTotalLength(); s.style.strokeDasharray = L; s.style.strokeDashoffset = L; });
+  const tl = gsap.timeline({ repeat: -1, repeatDelay: 1.2, paused: true });
+  tl.set(q('.pose'), { opacity: 0, rotate: 0, svgOrigin: '310 145' })
+    .fromTo(q('.scan'), { y: 0, opacity: 1 }, { y: 145, duration: 1.1, ease: 'none' })
+    .to(q('.scan'), { opacity: 0, duration: 0.15 })
+    .to(q('.depth'), { opacity: 1, duration: 0.6 }, '-=0.5')
+    .to(outlines, { strokeDashoffset: 0, duration: 0.7, stagger: 0.15 }, '-=0.2')
+    .to(q('.pose'), { opacity: 1, duration: 0.3 })
+    .to(q('.pose'), { rotate: 25, duration: 1.2, ease: 'sine.inOut', yoyo: true, repeat: 1 })
+    .to(q('.depth, .pose'), { opacity: 0, duration: 0.4 }, '+=0.6')
+    .to(outlines, { strokeDashoffset: (i, t) => t.style.strokeDasharray, duration: 0.4 }, '<');
+  return tl;
+}
+
+// ---------- ProgressTracker: dashboard tiles count up from the real stats ----------
+function tracker(el) {
+  const lc = cp.leetcode ?? { solved: 0, easy: 0, medium: 0, hard: 0 };
+  const tiles = [['LeetCode', lc.solved], ['Codeforces', cp.codeforces?.rating ?? 0], ['PRs merged', prs.total]];
+  const max = Math.max(lc.easy, lc.medium, lc.hard, 1);
+  const card = (x, y, w, h) => `<rect x="${x}" y="${y}" width="${w}" height="${h}" rx="10" fill="#18171a" stroke="rgba(255,255,255,.12)"/>`;
+  el.innerHTML = svg(400, 215, `<style>.k{font:600 10px 'Inter Tight Variable',sans-serif;fill:rgba(243,241,236,.6)}.n{font:italic 800 26px 'Inter Tight Variable',sans-serif;fill:${C.paper}}</style>
+    ${tiles.map(([k, v], i) => `${card(14 + i * 126, 16, 118, 70)}<text x="${26 + i * 126}" y="38" class="k">${k}</text><text x="${26 + i * 126}" y="72" class="n" data-v="${v}">0</text>`).join('')}
+    ${card(14, 98, 160, 104)}
+    ${[['Easy', lc.easy], ['Medium', lc.medium], ['Hard', lc.hard]].map(([k, v], i) => `<text x="26" y="${126 + i * 26}" class="k">${k}</text><rect x="72" y="${118 + i * 26}" width="88" height="7" rx="3.5" fill="#2e2c28"/><rect class="bar" x="72" y="${118 + i * 26}" width="${(v / max) * 88}" height="7" rx="3.5" fill="${C.accent}"/>`).join('')}
+    ${card(182, 98, 204, 104)}
+    <text x="194" y="118" class="k">Rating</text>
+    <polyline class="rate" points="196,184 250,170 300,140 340,128 372,114" fill="none" stroke="${C.accent}" stroke-width="2.5" stroke-linejoin="round"/>`);
+
+  const q = gsap.utils.selector(el);
+  const line = q('.rate')[0], L = line.getTotalLength();
+  const tl = gsap.timeline({ repeat: -1, repeatDelay: 1.6, paused: true });
+  q('.n').forEach((t, i) => {
+    const n = { v: 0 };
+    tl.fromTo(n, { v: 0 }, { v: +t.dataset.v, duration: 1.2, ease: 'power2.out', onUpdate: () => (t.textContent = Math.round(n.v)) }, i * 0.15);
+  });
+  tl.fromTo(q('.bar'), { scaleX: 0, transformOrigin: 'left center' }, { scaleX: 1, duration: 0.9, stagger: 0.12, ease: 'power3.out' }, 0.2)
+    .fromTo(line, { strokeDasharray: L, strokeDashoffset: L }, { strokeDashoffset: 0, duration: 1.2, ease: 'power2.inOut' }, 0.3)
+    .to(q('.bar'), { scaleX: 0, duration: 0.4 }, '+=2')
+    .to(line, { strokeDashoffset: L, duration: 0.4 }, '<');
+  return tl;
+}
+
+// ---------- Game jam: the torch sweeps the room until it catches the vampire ----------
+function jam(el) {
+  let floor = '';
+  for (let x = 0; x <= 400; x += 25) floor += `<path d="M${x} 0V215" stroke="rgba(255,255,255,.05)"/>`;
+  for (let y = 0; y <= 215; y += 25) floor += `<path d="M0 ${y}H400" stroke="rgba(255,255,255,.05)"/>`;
+  el.innerHTML = svg(400, 215, `<style>.c{font:700 11px 'Inter Tight Variable',sans-serif}</style>${floor}
+    <rect x="300" y="24" width="56" height="34" rx="6" fill="none" stroke="${C.slate}" stroke-width="1.5"/><text x="328" y="45" text-anchor="middle" class="c" fill="${C.slate}">TASK</text>
+    <g class="cone"><path d="M90 150 L330 60 A250 250 0 0 1 340 140 Z" fill="${C.accent}" opacity=".22"/></g>
+    <g class="vamp"><path d="M300 104l-14 26h28z" fill="#3a3936"/><circle cx="300" cy="98" r="8" fill="#3a3936"/></g>
+    <circle cx="90" cy="150" r="9" fill="${C.paper}"/>
+    <g class="choice" opacity="0">
+      <rect x="236" y="150" width="62" height="24" rx="12" fill="${C.accent}"/><text x="267" y="166" text-anchor="middle" class="c" fill="#0b0b0c">Reveal</text>
+      <rect x="306" y="150" width="50" height="24" rx="12" fill="none" stroke="${C.paper}"/><text x="331" y="166" text-anchor="middle" class="c" fill="${C.paper}">Kill</text>
+    </g>`);
+
+  const q = gsap.utils.selector(el);
+  const vamp = q('.vamp path, .vamp circle');
+  const tl = gsap.timeline({ repeat: -1, repeatDelay: 1, paused: true });
+  tl.set(q('.cone'), { rotate: -34, opacity: 1, svgOrigin: '90 150' })
+    .set(vamp, { fill: '#3a3936' })
+    .to(q('.cone'), { rotate: 14, duration: 1.4, ease: 'sine.inOut' })
+    .to(q('.cone'), { rotate: -6, duration: 1, ease: 'sine.inOut' })
+    .to(q('.cone'), { rotate: 0, duration: 0.6, ease: 'sine.out' })
+    .to(vamp, { fill: C.accent, duration: 0.3 })
+    .to(q('.vamp'), { x: 4, duration: 0.06, repeat: 5, yoyo: true }, '<')
+    .to(q('.choice'), { opacity: 1, duration: 0.4 }, '+=0.2')
+    .to(q('.choice, .cone'), { opacity: 0, duration: 0.4 }, '+=1.6');
+  return tl;
+}
+
+const BUILDERS = { faceplay, shuttle, twixt, player, site, tabby, vision, tracker, jam };
 
 export function mountVisuals(root, { reduced }) {
   const io = new IntersectionObserver((entries) => {
