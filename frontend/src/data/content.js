@@ -2,6 +2,17 @@
 
 export const projects = [
   {
+    id: 'shuttle',
+    category: 'Full-stack app, live',
+    name: 'Shuttle Court Slot Booking',
+    body: 'Residents of a colony sign up, pay a deposit and book badminton court slots, with Razorpay payments verified on the server. Gatekeepers check people in by scanning a QR code, and admins manage bookings, holidays and payments. Runs as a website and an Android app.',
+    stack: ['React', 'FastAPI', 'MongoDB', 'Razorpay', 'Capacitor'],
+    links: [
+      { label: 'Open the live site', href: 'https://www.sdstpscourt.xyz' },
+      { label: 'Source code', href: 'https://github.com/SankeerthNara/Shuttle' },
+    ],
+  },
+  {
     id: 'tabby',
     category: 'AI web app, live',
     name: 'Tabby',
@@ -46,17 +57,6 @@ export const projects = [
     body: 'Multiplayer Tic-Tac-Toe that checks who you are before it lets you play. Each player is identified with OpenCV and DeepFace, so nobody takes a turn for someone else.',
     stack: ['Python', 'OpenCV', 'DeepFace'],
     links: [{ label: 'Source code', href: 'https://github.com/SankeerthNara/tic-tac-toe' }],
-  },
-  {
-    id: 'shuttle',
-    category: 'Web app, live',
-    name: 'Shuttle Court Slot Booking',
-    body: 'Residents of a residential colony reserve badminton court slots online, so two families stop turning up for the same hour.',
-    stack: ['HTML', 'CSS', 'JavaScript'],
-    links: [
-      { label: 'Open the live site', href: 'https://www.sdstpscourt.xyz' },
-      { label: 'Source code', href: 'https://github.com/SankeerthNara/Shuttle' },
-    ],
   },
   {
     id: 'twixt',
