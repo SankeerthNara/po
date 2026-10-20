@@ -50,7 +50,7 @@ export const projects = [
   {
     id: 'jam',
     category: 'Game, in progress',
-    name: 'TGC Game Jam Entry',
+    name: 'Glitched Out',
     body: 'Keep your torch on the vampire to catch him, clear task consoles along the way, then decide whether to reveal him or kill him. Built solo in Godot for the TGC Game Jam.',
     stack: ['Godot', 'GDScript'],
     links: [{ label: 'Source code', href: 'https://github.com/SankeerthNara/TGC-Game-Jam' }],
