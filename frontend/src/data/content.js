@@ -29,6 +29,17 @@ export const projects = [
     links: [{ label: 'Open the live site', href: 'https://codetrack-coral.vercel.app' }],
   },
   {
+    id: 'jam',
+    category: 'Game, playable on itch.io',
+    name: 'Glitched Out',
+    body: 'Keep your torch on the vampire to catch him, clear task consoles along the way, then decide whether to reveal him or kill him. Built solo in Godot for the TGC Game Jam.',
+    stack: ['Godot', 'GDScript'],
+    links: [
+      { label: 'Play on itch.io', href: 'https://sankeerth-nara.itch.io/glitched-out' },
+      { label: 'Source code', href: 'https://github.com/SankeerthNara/TGC-Game-Jam' },
+    ],
+  },
+  {
     id: 'faceplay',
     category: 'Computer vision',
     name: 'Face Recognition Tic-Tac-Toe',
@@ -45,17 +56,6 @@ export const projects = [
     links: [
       { label: 'Open the live site', href: 'https://www.sdstpscourt.xyz' },
       { label: 'Source code', href: 'https://github.com/SankeerthNara/Shuttle' },
-    ],
-  },
-  {
-    id: 'jam',
-    category: 'Game, playable on itch.io',
-    name: 'Glitched Out',
-    body: 'Keep your torch on the vampire to catch him, clear task consoles along the way, then decide whether to reveal him or kill him. Built solo in Godot for the TGC Game Jam.',
-    stack: ['Godot', 'GDScript'],
-    links: [
-      { label: 'Play on itch.io', href: 'https://sankeerth-nara.itch.io/glitched-out' },
-      { label: 'Source code', href: 'https://github.com/SankeerthNara/TGC-Game-Jam' },
     ],
   },
   {
