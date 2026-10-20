@@ -34,10 +34,13 @@ export const projects = [
   {
     id: 'tracker',
     category: 'Web and Android app, live',
-    name: 'ProgressTracker',
+    name: 'Code Track',
     body: 'One dashboard for coding progress across LeetCode, Codeforces and GitHub: problems by difficulty, contest ratings and merged pull requests, with an Android app from the same code.',
     stack: ['Next.js', 'TypeScript', 'Capacitor'],
-    links: [{ label: 'Open the live site', href: 'https://codetrack-coral.vercel.app' }],
+    links: [
+      { label: 'Open the live site', href: 'https://www.progresstracker.online/' },
+      { label: 'Source code', href: 'https://github.com/SankeerthNara/codetrack' },
+    ],
   },
   {
     id: 'jam',

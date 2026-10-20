@@ -279,7 +279,7 @@ function vision(el) {
   return tl;
 }
 
-// ---------- ProgressTracker: dashboard tiles count up from the real stats ----------
+// ---------- Code Track: dashboard tiles count up from the real stats ----------
 function tracker(el) {
   const lc = cp.leetcode ?? { solved: 0, easy: 0, medium: 0, hard: 0 };
   const tiles = [['LeetCode', lc.solved], ['Codeforces', cp.codeforces?.rating ?? 0], ['PRs merged', prs.total]];
