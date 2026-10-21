@@ -1,13 +1,13 @@
 {
   "updated": "2026-10-21",
-  "total": 33,
+  "total": 34,
   "repos": [
     {
       "full": "Termix-SSH/Termix",
       "owner": "Termix-SSH",
       "name": "Termix",
       "url": "https://github.com/Termix-SSH/Termix",
-      "stars": 15612,
+      "stars": 15617,
       "language": "TypeScript",
       "description": "Self-hosted, plugin-based server management.",
       "prs": [
@@ -30,7 +30,7 @@
       "owner": "mozilla-mobile",
       "name": "firefox-ios",
       "url": "https://github.com/mozilla-mobile/firefox-ios",
-      "stars": 13057,
+      "stars": 13058,
       "language": "Swift",
       "description": "Firefox for iOS",
       "prs": [
@@ -65,7 +65,7 @@
       "owner": "microsoft",
       "name": "aspire",
       "url": "https://github.com/microsoft/aspire",
-      "stars": 6380,
+      "stars": 6381,
       "language": "C#",
       "description": "Aspire is the tool for code-first, extensible, observable dev and deploy.",
       "prs": [
@@ -106,7 +106,7 @@
       "owner": "microsoft",
       "name": "hve-core",
       "url": "https://github.com/microsoft/hve-core",
-      "stars": 1544,
+      "stars": 1549,
       "language": "PowerShell",
       "description": "A refined collection of Hypervelocity Engineering components (instructions, prompts, agents, and skills) to start your project off right, or upgrade your existing projects to get the most out of GitHub Copilot",
       "prs": [
@@ -178,6 +178,23 @@
           "title": "feat: add custom 404 not found page",
           "url": "https://github.com/7-Blocks/Kepler/pull/47",
           "merged": "2026-07-16"
+        }
+      ]
+    },
+    {
+      "full": "Devlaner/loomy",
+      "owner": "Devlaner",
+      "name": "loomy",
+      "url": "https://github.com/Devlaner/loomy",
+      "stars": 7,
+      "language": "TypeScript",
+      "description": "Loomy is an open-source collaborative whiteboard. Create infinite boards, invite your team, and bring ideas to life in real time",
+      "prs": [
+        {
+          "number": 40,
+          "title": "Fix IDOR in GET /api/users/{user_id} — email leaked to any authenticated user",
+          "url": "https://github.com/Devlaner/loomy/pull/40",
+          "merged": "2026-07-10"
         }
       ]
     },
