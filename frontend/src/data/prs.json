@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-21",
+  "updated": "2026-10-22",
   "total": 34,
   "repos": [
     {
@@ -7,7 +7,7 @@
       "owner": "Termix-SSH",
       "name": "Termix",
       "url": "https://github.com/Termix-SSH/Termix",
-      "stars": 15616,
+      "stars": 15618,
       "language": "TypeScript",
       "description": "Self-hosted, plugin-based server management.",
       "prs": [
@@ -30,7 +30,7 @@
       "owner": "mozilla-mobile",
       "name": "firefox-ios",
       "url": "https://github.com/mozilla-mobile/firefox-ios",
-      "stars": 13060,
+      "stars": 13061,
       "language": "Swift",
       "description": "Firefox for iOS",
       "prs": [
@@ -65,7 +65,7 @@
       "owner": "microsoft",
       "name": "aspire",
       "url": "https://github.com/microsoft/aspire",
-      "stars": 6381,
+      "stars": 6380,
       "language": "C#",
       "description": "Aspire is the tool for code-first, extensible, observable dev and deploy.",
       "prs": [
@@ -106,7 +106,7 @@
       "owner": "microsoft",
       "name": "hve-core",
       "url": "https://github.com/microsoft/hve-core",
-      "stars": 1550,
+      "stars": 1553,
       "language": "PowerShell",
       "description": "A refined collection of Hypervelocity Engineering components (instructions, prompts, agents, and skills) to start your project off right, or upgrade your existing projects to get the most out of GitHub Copilot",
       "prs": [
@@ -157,7 +157,7 @@
       "owner": "7-Blocks",
       "name": "Kepler",
       "url": "https://github.com/7-Blocks/Kepler",
-      "stars": 44,
+      "stars": 45,
       "language": "TypeScript",
       "description": "AI-Powered Autonomous Space Traffic Management Platform",
       "prs": [
