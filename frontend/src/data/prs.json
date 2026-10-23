@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-22",
+  "updated": "2026-10-23",
   "total": 34,
   "repos": [
     {
@@ -7,7 +7,7 @@
       "owner": "Termix-SSH",
       "name": "Termix",
       "url": "https://github.com/Termix-SSH/Termix",
-      "stars": 15632,
+      "stars": 15633,
       "language": "TypeScript",
       "description": "Self-hosted, plugin-based server management.",
       "prs": [
