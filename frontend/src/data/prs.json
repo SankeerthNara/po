@@ -7,7 +7,7 @@
       "owner": "Termix-SSH",
       "name": "Termix",
       "url": "https://github.com/Termix-SSH/Termix",
-      "stars": 15644,
+      "stars": 15647,
       "language": "TypeScript",
       "description": "Self-hosted, plugin-based server management.",
       "prs": [
@@ -65,7 +65,7 @@
       "owner": "microsoft",
       "name": "aspire",
       "url": "https://github.com/microsoft/aspire",
-      "stars": 6382,
+      "stars": 6380,
       "language": "C#",
       "description": "Aspire is the tool for code-first, extensible, observable dev and deploy.",
       "prs": [
@@ -140,7 +140,7 @@
       "owner": "OpenRailAssociation",
       "name": "netzgrafik-editor-frontend",
       "url": "https://github.com/OpenRailAssociation/netzgrafik-editor-frontend",
-      "stars": 88,
+      "stars": 89,
       "language": "TypeScript",
       "description": "The Netzgrafik-Editor is a powerful software that enables the creation, modification, and analysis of regular-interval timetable.  ",
       "prs": [
@@ -157,7 +157,7 @@
       "owner": "7-Blocks",
       "name": "Kepler",
       "url": "https://github.com/7-Blocks/Kepler",
-      "stars": 49,
+      "stars": 51,
       "language": "TypeScript",
       "description": "AI-Powered Autonomous Space Traffic Management Platform",
       "prs": [
