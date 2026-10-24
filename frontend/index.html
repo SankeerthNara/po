@@ -8,9 +8,14 @@
     <meta name="theme-color" content="#f3f1ec" />
     <meta property="og:title" content="Sankeerth Nara" />
     <meta property="og:description" content="Backend, AI and computer vision. <!--@pr-total--> pull requests merged into open-source projects." />
-    <meta property="og:image" content="/og.jpg" />
+    <link rel="canonical" href="https://www.sankeerthnara.in/" />
+    <meta property="og:url" content="https://www.sankeerthnara.in/" />
+    <meta property="og:image" content="https://www.sankeerthnara.in/og.jpg" />
+    <meta property="og:image:alt" content="Sankeerth Nara, backend, AI and open source" />
     <meta property="og:type" content="website" />
     <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content="https://www.sankeerthnara.in/og.jpg" />
+    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://www.sankeerthnara.in/#person","name":"Sankeerth Nara","url":"https://www.sankeerthnara.in/","image":"https://www.sankeerthnara.in/portrait.webp","email":"mailto:sankeerthnara@gmail.com","jobTitle":"Computer science student","affiliation":{"@type":"CollegeOrUniversity","name":"IIIT Hyderabad"},"address":{"@type":"PostalAddress","addressLocality":"Hyderabad","addressCountry":"IN"},"sameAs":["https://github.com/SankeerthNara","https://www.linkedin.com/in/sankeerth-nara-412ab3373/","https://www.instagram.com/sankeerth_nara/"]},{"@type":"WebSite","@id":"https://www.sankeerthnara.in/#website","url":"https://www.sankeerthnara.in/","name":"Sankeerth Nara","publisher":{"@id":"https://www.sankeerthnara.in/#person"}}]}</script>
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <link rel="preload" href="/portrait.webp" as="image" />
     <!-- The loader covers the page until the intro runs; reveal anyway if scripts fail. -->
@@ -19,6 +24,7 @@
     <script>try{var t=localStorage.getItem('theme')||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');document.documentElement.dataset.theme=t}catch(e){}</script>
     <script>document.documentElement.classList.add('js-pre');setTimeout(function(){document.documentElement.classList.remove('js-pre')},4000)</script>
     <script type="module" src="/src/main.js"></script>
+    <script type="module" src="/src/analytics.js"></script>
   </head>
   <body>
     <div class="loader" aria-hidden="true"></div>
@@ -83,7 +89,7 @@
         <span class="tick t-l" aria-hidden="true"></span><span class="tick t-r" aria-hidden="true"></span>
         <div class="petals" aria-hidden="true">
           <svg class="petal-ring" viewBox="-300 -300 600 600"></svg>
-          <img src="/portrait.webp" alt="" />
+          <img src="/portrait.webp" alt="" loading="lazy" />
         </div>
         <p class="label" id="about-h">// Intro</p>
         <p class="statement">I'm a computer science student who turns ideas into working software and <mark>open issues into merged pull requests.</mark> I focus on backends, computer vision and code that is easy to review.</p>
@@ -161,12 +167,27 @@
           <p><a class="pill" href="https://github.com/search?q=is%3Apr+is%3Amerged+author%3ASankeerthNara&amp;type=pullrequests" target="_blank" rel="noopener">See every pull request on GitHub</a></p>
         </div>
       </section>
+
+      <!-- ============ Message form ============ -->
+      <section class="write" id="message" aria-labelledby="write-h">
+        <p class="label">// Message</p>
+        <h2 id="write-h" class="write-title">send me a message.</h2>
+        <!-- Posts to FormSubmit, which forwards to my inbox; main.js submits it inline, this action is the no-JS fallback. -->
+        <form class="write-form" action="https://formsubmit.co/sankeerthnara@gmail.com" method="POST">
+          <label>Name<input name="name" autocomplete="name" required maxlength="100" /></label>
+          <label>Email<input name="email" type="email" autocomplete="email" required maxlength="200" /></label>
+          <label class="wide">Message<textarea name="message" rows="5" required maxlength="5000"></textarea></label>
+          <input type="hidden" name="_subject" value="New message from sankeerthnara.in" />
+          <input type="text" name="_honey" class="vh" tabindex="-1" autocomplete="off" aria-hidden="true" />
+          <p class="wide write-foot"><button class="pill" type="submit">Send message</button><span class="write-status" role="status"></span></p>
+        </form>
+      </section>
     </main>
 
     <!-- ============ Contact ============ -->
     <footer class="contact" id="contact">
       <div class="contact-stage">
-        <img class="contact-portrait" src="/portrait.webp" alt="" />
+        <img class="contact-portrait" src="/portrait.webp" alt="" loading="lazy" />
         <div class="contact-marquee" aria-hidden="true"><div class="band-track"><span>reach out —</span><span>reach out —</span><span>reach out —</span><span>reach out —</span></div></div>
       </div>
       <h2 class="vh">Contact</h2>
@@ -174,6 +195,7 @@
         <p><b>Mail:</b> <a href="mailto:sankeerthnara@gmail.com">sankeerthnara@gmail.com</a></p>
         <p><b>Based in:</b> Hyderabad, India</p>
         <p><b>Open to:</b> internships, open-source mentorship and GSoC</p>
+        <p><a href="#message">Send a message</a> · <a href="/privacy">Privacy</a> · <a href="/terms">Terms</a></p>
         <ul>
           <li><a href="https://github.com/SankeerthNara" target="_blank" rel="noopener">GitHub</a></li>
           <li><a href="https://www.linkedin.com/in/sankeerth-nara-412ab3373/" target="_blank" rel="noopener">LinkedIn</a></li>

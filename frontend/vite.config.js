@@ -17,6 +17,7 @@ const slots = {
 };
 
 export default defineConfig({
+  build: { rollupOptions: { input: ['index.html', '404.html', 'privacy.html', 'terms.html'] } },
   plugins: [
     {
       name: 'render-slots',

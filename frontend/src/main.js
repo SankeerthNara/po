@@ -198,3 +198,25 @@ if (!reduced) {
     scrollTrigger: { trigger: '.contact', start: 'top bottom', end: 'top top', scrub: true },
   });
 }
+
+// ---------- Message form: submit inline; without JS the form posts to FormSubmit directly ----------
+const form = $('.write-form');
+form?.addEventListener('submit', async (e) => {
+  e.preventDefault();
+  const status = $('.write-status', form), btn = $('button', form);
+  btn.disabled = true;
+  status.textContent = 'Sending…';
+  try {
+    const res = await fetch(form.action.replace('formsubmit.co/', 'formsubmit.co/ajax/'), {
+      method: 'POST', headers: { Accept: 'application/json' }, body: new FormData(form),
+    });
+    const data = await res.json();
+    if (!res.ok || String(data.success) !== 'true') throw new Error(data.message);
+    form.reset();
+    status.textContent = 'Thanks, your message is on its way.';
+  } catch {
+    status.innerHTML = 'Couldn\'t send that. Please email <a href="mailto:sankeerthnara@gmail.com">sankeerthnara@gmail.com</a>.';
+  } finally {
+    btn.disabled = false;
+  }
+});
