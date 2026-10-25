@@ -7,7 +7,7 @@
       "owner": "Termix-SSH",
       "name": "Termix",
       "url": "https://github.com/Termix-SSH/Termix",
-      "stars": 15650,
+      "stars": 15654,
       "language": "TypeScript",
       "description": "Self-hosted, plugin-based server management.",
       "prs": [
@@ -30,7 +30,7 @@
       "owner": "mozilla-mobile",
       "name": "firefox-ios",
       "url": "https://github.com/mozilla-mobile/firefox-ios",
-      "stars": 13061,
+      "stars": 13062,
       "language": "Swift",
       "description": "Firefox for iOS",
       "prs": [
@@ -157,7 +157,7 @@
       "owner": "7-Blocks",
       "name": "Kepler",
       "url": "https://github.com/7-Blocks/Kepler",
-      "stars": 52,
+      "stars": 53,
       "language": "TypeScript",
       "description": "AI-Powered Autonomous Space Traffic Management Platform",
       "prs": [
