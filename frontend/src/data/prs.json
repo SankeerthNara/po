@@ -7,7 +7,7 @@
       "owner": "Termix-SSH",
       "name": "Termix",
       "url": "https://github.com/Termix-SSH/Termix",
-      "stars": 15752,
+      "stars": 15753,
       "language": "TypeScript",
       "description": "Self-hosted, plugin-based server management.",
       "prs": [
@@ -30,7 +30,7 @@
       "owner": "mozilla-mobile",
       "name": "firefox-ios",
       "url": "https://github.com/mozilla-mobile/firefox-ios",
-      "stars": 13067,
+      "stars": 13068,
       "language": "Swift",
       "description": "Firefox for iOS",
       "prs": [
@@ -123,7 +123,7 @@
       "owner": "google",
       "name": "xrblocks",
       "url": "https://github.com/google/xrblocks",
-      "stars": 502,
+      "stars": 503,
       "language": "TypeScript",
       "description": "XR Blocks is a lightweight WebXR + AI library for rapidly prototyping advanced AI + XR experiences.",
       "prs": [
