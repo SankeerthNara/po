@@ -7,7 +7,7 @@
       "owner": "Termix-SSH",
       "name": "Termix",
       "url": "https://github.com/Termix-SSH/Termix",
-      "stars": 15966,
+      "stars": 15973,
       "language": "TypeScript",
       "description": "Self-hosted, plugin-based server management.",
       "prs": [
@@ -65,7 +65,7 @@
       "owner": "kornia",
       "name": "kornia",
       "url": "https://github.com/kornia/kornia",
-      "stars": 12379,
+      "stars": 12380,
       "language": "Python",
       "description": "🐍 Geometric Computer Vision Library for Spatial AI",
       "prs": [
@@ -140,7 +140,7 @@
       "owner": "google",
       "name": "xrblocks",
       "url": "https://github.com/google/xrblocks",
-      "stars": 515,
+      "stars": 516,
       "language": "TypeScript",
       "description": "XR Blocks is a lightweight WebXR + AI library for rapidly prototyping advanced AI + XR experiences.",
       "prs": [
@@ -174,7 +174,7 @@
       "owner": "7-Blocks",
       "name": "Kepler",
       "url": "https://github.com/7-Blocks/Kepler",
-      "stars": 86,
+      "stars": 87,
       "language": "TypeScript",
       "description": "AI-Powered Autonomous Space Traffic Management Platform",
       "prs": [
