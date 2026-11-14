@@ -7,7 +7,7 @@
       "owner": "Termix-SSH",
       "name": "Termix",
       "url": "https://github.com/Termix-SSH/Termix",
-      "stars": 15983,
+      "stars": 15997,
       "language": "TypeScript",
       "description": "Self-hosted, plugin-based server management.",
       "prs": [
@@ -30,7 +30,7 @@
       "owner": "mozilla-mobile",
       "name": "firefox-ios",
       "url": "https://github.com/mozilla-mobile/firefox-ios",
-      "stars": 13070,
+      "stars": 13069,
       "language": "Swift",
       "description": "Firefox for iOS",
       "prs": [
@@ -65,7 +65,7 @@
       "owner": "kornia",
       "name": "kornia",
       "url": "https://github.com/kornia/kornia",
-      "stars": 12382,
+      "stars": 12383,
       "language": "Python",
       "description": "🐍 Geometric Computer Vision Library for Spatial AI",
       "prs": [
@@ -82,7 +82,7 @@
       "owner": "microsoft",
       "name": "aspire",
       "url": "https://github.com/microsoft/aspire",
-      "stars": 6425,
+      "stars": 6426,
       "language": "C#",
       "description": "Aspire is the tool for code-first, extensible, observable dev and deploy.",
       "prs": [
@@ -140,7 +140,7 @@
       "owner": "google",
       "name": "xrblocks",
       "url": "https://github.com/google/xrblocks",
-      "stars": 516,
+      "stars": 517,
       "language": "TypeScript",
       "description": "XR Blocks is a lightweight WebXR + AI library for rapidly prototyping advanced AI + XR experiences.",
       "prs": [
