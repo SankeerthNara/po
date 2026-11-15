@@ -7,7 +7,7 @@
       "owner": "Termix-SSH",
       "name": "Termix",
       "url": "https://github.com/Termix-SSH/Termix",
-      "stars": 16012,
+      "stars": 16016,
       "language": "TypeScript",
       "description": "Self-hosted, plugin-based server management.",
       "prs": [
@@ -157,7 +157,7 @@
       "owner": "7-Blocks",
       "name": "Kepler",
       "url": "https://github.com/7-Blocks/Kepler",
-      "stars": 96,
+      "stars": 95,
       "language": "TypeScript",
       "description": "Kepler is an AI-powered Orbital Intelligence Platform designed to monitor satellites, track space debris, predict collision risks, and generate autonomous avoidance recommendations.",
       "prs": [
