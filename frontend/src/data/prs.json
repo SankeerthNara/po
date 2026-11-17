@@ -7,7 +7,7 @@
       "owner": "Termix-SSH",
       "name": "Termix",
       "url": "https://github.com/Termix-SSH/Termix",
-      "stars": 16047,
+      "stars": 16054,
       "language": "TypeScript",
       "description": "Self-hosted, plugin-based server management.",
       "prs": [
@@ -82,7 +82,7 @@
       "owner": "microsoft",
       "name": "aspire",
       "url": "https://github.com/microsoft/aspire",
-      "stars": 6430,
+      "stars": 6432,
       "language": "C#",
       "description": "Aspire is the tool for code-first, extensible, observable dev and deploy.",
       "prs": [
@@ -186,7 +186,7 @@
       "owner": "OpenRailAssociation",
       "name": "netzgrafik-editor-frontend",
       "url": "https://github.com/OpenRailAssociation/netzgrafik-editor-frontend",
-      "stars": 88,
+      "stars": 89,
       "language": "TypeScript",
       "description": "The Netzgrafik-Editor is a powerful software that enables the creation, modification, and analysis of regular-interval timetable.  ",
       "prs": [
@@ -203,7 +203,7 @@
       "owner": "Devlaner",
       "name": "loomy",
       "url": "https://github.com/Devlaner/loomy",
-      "stars": 7,
+      "stars": 8,
       "language": "TypeScript",
       "description": "Loomy is an open-source collaborative whiteboard. Create infinite boards, invite your team, and bring ideas to life in real time",
       "prs": [
