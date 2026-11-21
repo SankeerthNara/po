@@ -7,7 +7,7 @@
       "owner": "Termix-SSH",
       "name": "Termix",
       "url": "https://github.com/Termix-SSH/Termix",
-      "stars": 16082,
+      "stars": 16088,
       "language": "TypeScript",
       "description": "Self-hosted, plugin-based server management.",
       "prs": [
@@ -30,7 +30,7 @@
       "owner": "mozilla-mobile",
       "name": "firefox-ios",
       "url": "https://github.com/mozilla-mobile/firefox-ios",
-      "stars": 13076,
+      "stars": 13077,
       "language": "Swift",
       "description": "Firefox for iOS",
       "prs": [
@@ -82,7 +82,7 @@
       "owner": "microsoft",
       "name": "aspire",
       "url": "https://github.com/microsoft/aspire",
-      "stars": 6443,
+      "stars": 6444,
       "language": "C#",
       "description": "Aspire is the tool for code-first, extensible, observable dev and deploy.",
       "prs": [
@@ -157,7 +157,7 @@
       "owner": "7-Blocks",
       "name": "Kepler",
       "url": "https://github.com/7-Blocks/Kepler",
-      "stars": 95,
+      "stars": 94,
       "language": "TypeScript",
       "description": "Kepler is an AI-powered Orbital Intelligence Platform designed to monitor satellites, track space debris, predict collision risks, and generate autonomous avoidance recommendations.",
       "prs": [
