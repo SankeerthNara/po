@@ -30,7 +30,7 @@
       "owner": "mozilla-mobile",
       "name": "firefox-ios",
       "url": "https://github.com/mozilla-mobile/firefox-ios",
-      "stars": 13078,
+      "stars": 13079,
       "language": "Swift",
       "description": "Firefox for iOS",
       "prs": [
@@ -65,7 +65,7 @@
       "owner": "kornia",
       "name": "kornia",
       "url": "https://github.com/kornia/kornia",
-      "stars": 12403,
+      "stars": 12404,
       "language": "Python",
       "description": "🐍 Geometric Computer Vision Library for Spatial AI",
       "prs": [
