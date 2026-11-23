@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-22",
+  "updated": "2026-11-23",
   "total": 35,
   "repos": [
     {
@@ -123,7 +123,7 @@
       "owner": "microsoft",
       "name": "hve-core",
       "url": "https://github.com/microsoft/hve-core",
-      "stars": 1628,
+      "stars": 1629,
       "language": "PowerShell",
       "description": "A refined collection of Hypervelocity Engineering components (instructions, prompts, agents, and skills) to start your project off right, or upgrade your existing projects to get the most out of GitHub Copilot",
       "prs": [
