@@ -7,7 +7,7 @@
       "owner": "Termix-SSH",
       "name": "Termix",
       "url": "https://github.com/Termix-SSH/Termix",
-      "stars": 16124,
+      "stars": 16126,
       "language": "TypeScript",
       "description": "Self-hosted, plugin-based server management.",
       "prs": [
@@ -65,7 +65,7 @@
       "owner": "kornia",
       "name": "kornia",
       "url": "https://github.com/kornia/kornia",
-      "stars": 12409,
+      "stars": 12411,
       "language": "Python",
       "description": "🐍 Geometric Computer Vision Library for Spatial AI",
       "prs": [
@@ -140,7 +140,7 @@
       "owner": "google",
       "name": "xrblocks",
       "url": "https://github.com/google/xrblocks",
-      "stars": 524,
+      "stars": 526,
       "language": "TypeScript",
       "description": "XR Blocks is a lightweight WebXR + AI library for rapidly prototyping advanced AI + XR experiences.",
       "prs": [
@@ -186,7 +186,7 @@
       "owner": "OpenRailAssociation",
       "name": "netzgrafik-editor-frontend",
       "url": "https://github.com/OpenRailAssociation/netzgrafik-editor-frontend",
-      "stars": 90,
+      "stars": 91,
       "language": "TypeScript",
       "description": "The Netzgrafik-Editor is a powerful software that enables the creation, modification, and analysis of regular-interval timetable.  ",
       "prs": [
