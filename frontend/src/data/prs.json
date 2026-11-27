@@ -7,7 +7,7 @@
       "owner": "Termix-SSH",
       "name": "Termix",
       "url": "https://github.com/Termix-SSH/Termix",
-      "stars": 16133,
+      "stars": 16136,
       "language": "TypeScript",
       "description": "Self-hosted, plugin-based server management.",
       "prs": [
@@ -65,7 +65,7 @@
       "owner": "kornia",
       "name": "kornia",
       "url": "https://github.com/kornia/kornia",
-      "stars": 12435,
+      "stars": 12445,
       "language": "Python",
       "description": "🐍 Geometric Computer Vision Library for Spatial AI",
       "prs": [
